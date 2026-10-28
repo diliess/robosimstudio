@@ -11,9 +11,19 @@ __pycache__/
 dist/
 
 # Run output: episodes, videos and snapshots are evidence, not source.
+# Twins stay local, except the B2-Z1 ship-grid scene: its source and the
+# reference photo are tracked. The official robot checkouts, the meshes
+# prepare_assets.py writes, and the exported USD stay out.
 outputs/
 examples/live/run/
-examples/live/twins/
+examples/live/twins/*
+!examples/live/twins/unitree_b2_z1/
+examples/live/twins/unitree_b2_z1/run/
+examples/live/twins/unitree_b2_z1/__pycache__/
+examples/live/twins/unitree_b2_z1/assets/unitree_mujoco/
+examples/live/twins/unitree_b2_z1/assets/unitree_ros/
+examples/live/twins/unitree_b2_z1/assets/assembled/
+examples/live/twins/unitree_b2_z1/assets/export/
 
 # A stripped MJCF is written beside its source and removed afterwards; a crash
 # in between leaks one.
