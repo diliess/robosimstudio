@@ -18,6 +18,8 @@ outputs/
 examples/live/run/
 examples/live/twins/*
 !examples/live/twins/unitree_b2_z1/
+# Shareable industrial welding source, assets and editable USD project.
+!examples/live/twins/industrial_welding/
 examples/live/twins/unitree_b2_z1/run/
 examples/live/twins/unitree_b2_z1/__pycache__/
 examples/live/twins/unitree_b2_z1/assets/unitree_mujoco/

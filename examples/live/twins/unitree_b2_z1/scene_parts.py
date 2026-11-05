@@ -5,18 +5,17 @@ from __future__ import annotations
 from dataclasses import replace
 
 import warp as wp
+from prepare_assets import ARM_HOME, ARM_JOINTS, LEG_HOME, steel_texture
 
 import robosimstudio as rss
+from robosimstudio.core.render.finish import Finish
 from robosimstudio.domains.rigid.entity import EntityRigid
 from robosimstudio.domains.static.entity import EntityStatic
-from robosimstudio.core.render.finish import Finish
 from robosimstudio.paths import resolve_asset
 
-from prepare_assets import ARM_HOME, LEG_HOME, steel_texture
 
-
-@rss.register_entity("unitree_b2_z1_import")
-class B2Z1Import(EntityStatic):
+@rss.register_entity("unitree_b2_e05l_import")
+class B2E05LImport(EntityStatic):
     """Import the robot as a resident articulation, keeping its real free joint."""
 
     def _add_asset(self, builder):
@@ -24,11 +23,16 @@ class B2Z1Import(EntityStatic):
 
         SolverMuJoCo.register_custom_attributes(builder)
         _, frame = self._shape_frame()
-        builder.add_mjcf(str(resolve_asset(self.spec.asset)), floating=None, xform=frame,
-                         enable_self_collisions=False, collapse_fixed_joints=False,
-                         parse_sites=False, verbose=False)
-        home = {**LEG_HOME, **{f"z1_joint{i + 1}": q for i, q in enumerate(ARM_HOME)},
-                "z1_jointGripper": -0.6}
+        builder.add_mjcf(
+            str(resolve_asset(self.spec.asset)),
+            floating=None,
+            xform=frame,
+            enable_self_collisions=False,
+            collapse_fixed_joints=False,
+            parse_sites=False,
+            verbose=False,
+        )
+        home = {**LEG_HOME, **dict(zip(ARM_JOINTS, ARM_HOME, strict=True))}
         for index, label in enumerate(builder.joint_label):
             name = str(label).rsplit("/", 1)[-1]
             if name in home:
@@ -57,9 +61,13 @@ class SteelTWorkpiece(EntityRigid):
         self.base_shape = builder.shape_count - 1
         cfg = self._contact_cfg(builder)
         self.upright_shape = builder.add_shape_box(
-            self.body, hx=0.150, hy=0.005, hz=0.110,
+            self.body,
+            hx=0.150,
+            hy=0.005,
+            hz=0.110,
             xform=wp.transform((0.0, 0.0, 0.115), wp.quat_identity()),
-            cfg=cfg, label="workpiece_upright_plate",
+            cfg=cfg,
+            label="workpiece_upright_plate",
         )
         # A display-only cut face. It adds neither contact geometry nor mass.
         visual = cfg.copy()
@@ -67,9 +75,13 @@ class SteelTWorkpiece(EntityRigid):
         visual.has_shape_collision = False
         visual.has_particle_collision = False
         self.cut_shape = builder.add_shape_box(
-            self.body, hx=0.150, hy=0.005, hz=0.00001,
+            self.body,
+            hx=0.150,
+            hy=0.005,
+            hz=0.00001,
             xform=wp.transform((0.0, 0.0, 0.225), wp.quat_identity()),
-            cfg=visual, label="workpiece_bright_cut_face",
+            cfg=visual,
+            label="workpiece_bright_cut_face",
         )
 
     def apply_display(self, builder):

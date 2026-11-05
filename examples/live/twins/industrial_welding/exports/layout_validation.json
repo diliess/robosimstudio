@@ -1,0 +1,191 @@
+{
+  "hall_size_m": [
+    32,
+    32
+  ],
+  "folded_options": [
+    {
+      "calf_rad": -1.2,
+      "base_height_m": 0.5950129754552375,
+      "folded_top_z_m": 1.6543789684386552,
+      "folded_xy_radius_m": 0.7364144102358785
+    },
+    {
+      "calf_rad": -1.3,
+      "base_height_m": 0.5746390000707005,
+      "folded_top_z_m": 1.634004993054118,
+      "folded_xy_radius_m": 0.7465214004311548
+    },
+    {
+      "calf_rad": -1.65,
+      "base_height_m": 0.49278121826593324,
+      "folded_top_z_m": 1.5521472112493508,
+      "folded_xy_radius_m": 0.776613896411899
+    },
+    {
+      "calf_rad": -2.0,
+      "base_height_m": 0.396486444637721,
+      "folded_top_z_m": 1.4558524376211388,
+      "folded_xy_radius_m": 0.79755290396441
+    },
+    {
+      "calf_rad": -2.35,
+      "base_height_m": 0.28869618814340026,
+      "folded_top_z_m": 1.3480621811268179,
+      "folded_xy_radius_m": 0.8084555908740918
+    }
+  ],
+  "folded_map_clearance_sufficient": true,
+  "hall_area_m2": 1024.0,
+  "old_counts": {
+    "A": {
+      "workpieces": 8,
+      "seams": 13,
+      "segments": 39,
+      "length_m": 7.5623388870905055
+    },
+    "B": {
+      "workpieces": 2,
+      "seams": 140,
+      "segments": 684,
+      "length_m": 160.704
+    }
+  },
+  "current_counts": {
+    "A": {
+      "workpieces": 24,
+      "seams": 29,
+      "segments": 134,
+      "length_m": 22.67637220963354
+    },
+    "B": {
+      "workpieces": 4,
+      "seams": 288,
+      "segments": 1812,
+      "length_m": 444.29600000000005
+    }
+  },
+  "A_station_types": {
+    "t_joint": 8,
+    "butt_plate": 6,
+    "vertical_corner": 1,
+    "inclined": 1,
+    "s_curve": 7,
+    "open_gusset_bracket": 1
+  },
+  "actual_root_height_levels_m": {
+    "t_joint": [
+      0.25,
+      0.4,
+      0.55,
+      0.7,
+      0.85,
+      1.0,
+      1.15
+    ],
+    "s_curve": [
+      0.25,
+      0.4,
+      0.55,
+      0.7,
+      0.85,
+      1.0,
+      1.15
+    ]
+  },
+  "remaining_floating_table_braces": [],
+  "plate_stack_present": false,
+  "butt_inclines_deg": {
+    "A02": 0,
+    "A05": 0,
+    "A09": 15,
+    "A11": 30,
+    "A17": 45,
+    "A24": 60
+  },
+  "A05_kind": "butt_plate",
+  "outside_floor": [],
+  "inter_assembly_intersections": [],
+  "minimum_A_table_aabb_gap_m": 2.2224008777567805,
+  "closest_A_tables": [
+    {
+      "stations": [
+        "A02",
+        "A08"
+      ],
+      "aabb_gap_m": 2.2224008777567805
+    },
+    {
+      "stations": [
+        "A06",
+        "A12"
+      ],
+      "aabb_gap_m": 2.2224008777567805
+    },
+    {
+      "stations": [
+        "A08",
+        "A14"
+      ],
+      "aabb_gap_m": 2.2224008777567814
+    },
+    {
+      "stations": [
+        "A14",
+        "A20"
+      ],
+      "aabb_gap_m": 2.2642792726189622
+    },
+    {
+      "stations": [
+        "A15",
+        "A21"
+      ],
+      "aabb_gap_m": 2.2642792726189622
+    },
+    {
+      "stations": [
+        "A17",
+        "A23"
+      ],
+      "aabb_gap_m": 2.2642792726189622
+    },
+    {
+      "stations": [
+        "A18",
+        "A24"
+      ],
+      "aabb_gap_m": 2.2642792726189622
+    },
+    {
+      "stations": [
+        "A03",
+        "A09"
+      ],
+      "aabb_gap_m": 2.264279272618963
+    }
+  ],
+  "panel_sizes_m": {
+    "B01": [
+      12.0,
+      3.6
+    ],
+    "B02": [
+      10.0,
+      6.2
+    ],
+    "B03": [
+      10.0,
+      5.6
+    ],
+    "B04": [
+      10.0,
+      2.8
+    ]
+  },
+  "main_aisle_width_m": 2.8,
+  "navigation_all_major_areas_connected": true,
+  "navigation_goal_count": 28,
+  "stance_scope": "table spacing is geometry; each representative stance is checked separately with full robot geometry, folded access and four-foot support",
+  "pass": true
+}

@@ -1,0 +1,11 @@
+{
+  "pass": true,
+  "poses_replayed": 2094,
+  "segments": 189,
+  "max_position_error_m": 0.0005624643100454415,
+  "max_orientation_error_deg": 0.13577712810420023,
+  "minimum_projected_com_margin_m": 0.1436172572859069,
+  "minimum_required_com_margin_m": 0.015,
+  "failures": [],
+  "scope": "necessary static support + kinematic/collision checks, not a dynamics or torque certificate"
+}

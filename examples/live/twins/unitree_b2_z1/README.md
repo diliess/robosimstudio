@@ -1,86 +1,78 @@
-# 宇树 B2 + Z1 船板焊接板格场景
+# B2（无雷达/护罩）+ E05L-Pro 船板格架场景
 
-在本目录运行 `./ctl up` 启动实时页面；当前地址为 http://localhost:8081。
-`./ctl status --wait` 查看构建状态，`./ctl quit` 停止本场景。
-保存 `scene.py` 或旁边的辅助 Python 模块后，页面自动重建，无需重启。
+当前机器人为 `unitree_b2_e05l_pro`。沿用原场景目录 `unitree_b2_z1/`，既有启动路径不变。
+场景包含 3×3 船板格架，机器狗位于中央格；E05L-Pro 六轴通过页面的 `Arm: e05l` 操作。
 
-## 当前布局
+## 启动
 
-用户确认使用 3×3 个矩形格，机器狗位于中央格。每个格子由四条 T 形边界围成，
-相邻格子共用边界，所有板件落在同一连续钢底板上，模拟船板与纵横加强肋的布置。
-
-| 参数 | 当前值 |
-| --- | --- |
-| 格子数量 | 3 行 × 3 列，共 9 格 |
-| 每格净空 | 2.00 × 2.00 m，按立板内表面计算 |
-| 立板高度 | 220 mm |
-| 板厚 | 10 mm，底板、足板和立板相同 |
-| T 形足板宽度 | 180 mm |
-| 肋条总高度 | 230 mm，高于连续底板上表面 |
-| 整体底板尺寸 | 约 6.45 × 6.45 m |
-| 机器人所在格 | 中央格，索引 `(1, 1)`，从 0 开始 |
-
-格架是固定且不可分离的船板结构。B2 保留自由底座和 12 个腿部关节，
-足端真实接触钢底板承重；背部 Z1 保留六轴机械臂和原生夹爪。
-腿部位置伺服维持站立，Z1 可通过页面的机械臂面板操作。
-
-本次完成场景布局；尚未接入四足行走、跨格、焊枪、焊接轨迹、热影响或熔池仿真。
-
-## 只导出环境到 QuadWeld
-
-`export_environment.py` 从实时编译模型提取格架，不包含 B2、Z1 或其安装板。
-通过 `./ctl eval` 调用，输出在 `assets/export/ship-grid/`，目录内包含
-`ship_grid.usda`、两张相对路径贴图、实际几何清单 `manifest.json` 和导入说明。
+项目根目录已有 uv Python 3.12 环境。首次接入模型默认读取同级的 `go2_rl_lab`：
 
 ```bash
-./ctl eval - --wait <<'PY'
-from export_environment import export_environment
-export_environment(sim, grid)
-PY
+cd ~/code/robosimstudio
+uv sync --frozen --extra cpu --extra dev
+cd examples/live/twins/unitree_b2_z1
+CUDA_VISIBLE_DEVICES=0 ./ctl up --port 8081
+./ctl status --wait
 ```
 
-资产已复制到 `/home/hlq/QuadWeld/assets/environments/ship-grid/`，
-该项目新增 `scene/environment.py` 和 `main.py --environment-usd` 预览入口。
-目标项目继续使用自己的机器人配置。米制、Z 向上，中央格底板上表面为 z=0。
-33 个静态碰撞箱体保留，周围场地仅显示；导出不包含原场景的无限地平面。
-USD 标准检查及目标项目 13 项相关 CPU 测试通过；本机没有 Isaac Sim 6，未验证其中的渲染或任务运行。
-详细接口见导出目录的 `README.md`，验证记录见 QuadWeld 的 `outputs/runs/ship_grid_import/validation.json`。
+打开 `up` 输出的 URL；8081 空闲时为 http://localhost:8081。
+保存 `scene.py` 或辅助 Python 模块后自动重建。`./ctl quit` 停止本页面。
+首次 RTX 截图编译着色器可能需要数分钟。
 
-## 修改布局
+如果来源仓库不在同级目录，在首次启动前指定它：
 
-编辑 `scene.py` 开头的参数：
-
-```python
-GRID_ROWS = 3
-GRID_COLUMNS = 3
-CELL_CLEAR_SIZE = 2.0
-WEB_HEIGHT = 0.220
-PLATE_THICKNESS = 0.010
-FLANGE_WIDTH = 0.180
-ACTIVE_CELL = (GRID_ROWS // 2, GRID_COLUMNS // 2)
+```bash
+GO2_RL_LAB_ROOT=/your/path/go2_rl_lab CUDA_VISIBLE_DEVICES=0 ./ctl up --port 8081
 ```
 
-几何、机器狗初始位置及总览和俯视相机随布局参数生成；
-`part_detail` 是当前中央格一处交叉节点的固定细节视角，需要时可单独调整。
+首次加载会把需要的 MJCF、网格、安装元数据和 TCP 元数据复制到
+`assets/assembled/source/`，并按内容哈希生成 `b2_e05l_pro.xml`。
+已有完整快照时可离开来源仓库运行。这里不再要求下载 Z1 或官方 B2 仓库。
+`assets/assembled/` 和运行输出仍由现有 Git 忽略规则排除。
 
-## 文件与视角
+## 模型和安装位置
 
-- `scene.py`：布局参数、机器人、场地、相机。
-- `ship_grid.py`：共享边界的格架、T 形足板、立板、连续底板与金属外观。
-- `scene_parts.py`：保留 B2 浮动底座的导入器；旧单件工件实现保留但不用于当前布局。
-- `prepare_assets.py`：官方 B2 与 Z1 装配、独立 Z1 运动学模型和程序金属纹理。
-- `ref/unwelded_01.png`：用户原始 T 形工件图片，原样保存，用于截面及材质参考。
-- `assets/`：官方模型、许可证、生成的装配 XML 和纹理。
-- `REPORT.md`：当前简化、假设和验证结果。
-- `run/`：截图、对照、验证 JSON 和日志；原工作台布局备份为 `scene_before_ship_grid.py`。
+来源仓库：`/home/idea/code/go2_rl_lab`。
 
-相机：`overview` 看整个 3×3 板格，`top` 俯视格子分布，
-`center_cell` 近看中央格中的机器狗，`part_detail` 看板件交叉节点。
+- 组合 MJCF：`deploy/deploy_mujoco/assets/b2_e05l_pro_simplified.xml`。
+- 无雷达/护罩外壳：`b2/base_link_no_lidar_guard.obj`；保留来源模型的 D435i。
+- E05L-Pro 的原始网格、质量、惯性和六轴关节限位保持来源值。
+- 保留来源组合模型的 5 kg 焊枪及 26 个部件凸包。组合总质量约 96.685 kg，
+  包括来源有意保留的 Link6/end_Link 重复端部质量。
+- 安装位置由 `source/go2_rl_lab/go2_rl_lab/assets/urdf/b2_e05l_pro/integration.json`
+  和组合 MJCF 共同给出：B2 `base_link` 下 `(-0.025, +0.020, +0.075) m`，RPY 为零。
+  +X 向狗头，+Y 向左。来源研究报告另推荐 `(0, 0, 0.075)` 作为已复核候选；
+  正式模型未采用该候选，本场景沿用正式默认值。
+- `scene.py` 的 `ARM_MOUNT_XYZ`、`ARM_MOUNT_RPY` 可调整安装位置与姿态。
+- TCP 来自 `welding_tip.json` 的短弯头出口中心，在 `e05l_welding_torch` 坐标系中为
+  `(-0.01118192, -0.00097361, +0.31412248) m`。工具 +Z 沿来源出口法线。
+  这是 CAD 几何参考，尚未硬件标定。
+- 初始腿姿、机械臂姿态及低站姿高度来自来源 `visualization_pose.json` 和平地场景。
 
-## 官方模型来源
+B2 保留自由底座，由 12 个腿部位置伺服和真实足端接触支承。
+腿部驱动力限制沿用来源的 200/320 Nm；E05L 使用仿真位置伺服（Kp=50000、Kd=400），
+未假设厂家未提供的电机额定能力。Newton IK 使用当前自由底座位置，避免固定根坐标的偏移。
+另生成保留来源关节变换和限位的独立 `e05l_kinematics.urdf` 供核对。
 
-B2：[unitreerobotics/unitree_mujoco](https://github.com/unitreerobotics/unitree_mujoco)，
-提交 `1eb6642e3f3fdfb7fb13a9794fd6a2dd93ea0e7d`。
-Z1：[unitreerobotics/unitree_ros](https://github.com/unitreerobotics/unitree_ros)，
-提交 `073aec51f548add65baf482ea8bb3be4cb81b7ad`。
-原生夹爪来自官方 xacro 可选分支；BSD-3-Clause 许可证保留在对应目录。
+## 格架和视角
+
+| 参数 | 值 |
+| --- | --- |
+| 格数 | 3×3，中央格索引 `(1, 1)` |
+| 单格净空 | 2.00×2.00 m |
+| 立板高度 | 220 mm |
+| 板厚 | 10 mm |
+| T 形足板宽 | 180 mm |
+| 底板 | 约 6.45×6.45 m |
+
+布局参数位于 `scene.py`。相机为 `overview`、`top`、`center_cell`、`part_detail`。
+页面的 Camera 选中相机后点击 Look through 查看；机械臂末端 gizmo 对应焊枪 TCP。
+
+```bash
+./ctl snapshot --camera center_cell --size 960x600
+./ctl check --camera center_cell
+```
+
+当前是站立和机械臂交互场景，未接入四足行走、跨格策略或焊接工艺仿真。
+`export_environment.py` 继续只导出格架；本次没有重新生成或验证历史 QuadWeld 导出。
+本次验证见 `REPORT.md` 与 `run/b2_e05l_validation.json`。

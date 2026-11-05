@@ -1,0 +1,44 @@
+{
+  "passed": true,
+  "unresolved_assets": [],
+  "layers": 1,
+  "external_assets": 3,
+  "external_asset_scope": "three relative PBR maps in textures/; no network or source robot mesh dependencies",
+  "packaged_assets": 3,
+  "packaged_unresolved_assets": [],
+  "compliance_errors": [],
+  "compliance_failed_checks": [],
+  "compliance_warnings": [],
+  "max_body_position_error_m": 0.0,
+  "max_fixture_vertex_error_m": 1.907369595136449e-07,
+  "max_robot_mesh_vertex_error_m": 3.441682194972144e-13,
+  "tcp_position_error_m": 0.0,
+  "max_joint_anchor_error_m": 1.3113021113001891e-08,
+  "max_joint_coordinate_error_rad": 3.571655105005789e-08,
+  "hall_bounds_m": [
+    [
+      -16.0,
+      -16.0,
+      -0.10000000074505806
+    ],
+    [
+      16.050000000745058,
+      16.050000000745058,
+      6.0
+    ]
+  ],
+  "counts": {
+    "fixtures": 32,
+    "fixture_parts": 1124,
+    "surface_preparation_patches": 12,
+    "fixture_colliders": 1087,
+    "robot_bodies": 24,
+    "robot_geoms": 106,
+    "robot_colliders": 67,
+    "revolute_joints": 18,
+    "fixed_joints": 5,
+    "seams": 317
+  },
+  "usdz_openable": true,
+  "physics_scope": "USD schema/poses/anchors checked; no PhysX dynamics or controller equivalence claim"
+}

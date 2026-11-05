@@ -1,0 +1,8 @@
+# Standalone scene geometry / source MJCF / OpenUSD toolchain (Python 3.12).
+# Intentionally separate from both Newton/RoboSimStudio and Isaac Sim runtimes.
+mujoco==3.15.0
+numpy==2.2.6
+scipy==1.18.1
+usd-core==26.3
+Pillow==11.3.0
+imageio==2.38.0

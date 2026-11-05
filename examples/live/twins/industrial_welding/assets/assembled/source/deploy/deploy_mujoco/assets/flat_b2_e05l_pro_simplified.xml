@@ -1,0 +1,24 @@
+<?xml version='1.0' encoding='utf-8'?>
+<mujoco model="b2_e05l_pro_simplified flat scene">
+  <include file="b2_e05l_pro_simplified.xml" />
+  <statistic center="0 0 1.0" extent="3" />
+  <visual>
+    <headlight diffuse="0.6 0.6 0.6" ambient="0.1 0.1 0.1" specular="0.9 0.9 0.9" />
+    <rgba haze="0.15 0.25 0.35 1" />
+    <global azimuth="-140" elevation="-20" />
+  </visual>
+  <asset>
+    <texture type="skybox" builtin="flat" rgb1="0 0 0" rgb2="0 0 0" width="512" height="3072" />
+    <texture type="2d" name="groundplane" builtin="checker" mark="edge" rgb1="0.2 0.3 0.4" rgb2="0.1 0.2 0.3" markrgb="0.8 0.8 0.8" width="300" height="300" />
+    <material name="groundplane" texture="groundplane" texuniform="true" texrepeat="5 5" reflectance="0.2" />
+  </asset>
+  <worldbody>
+    <light pos="1 0 3.5" dir="0 0 -1" directional="true" />
+    <geom name="floor" size="0 0 0.05" type="plane" material="groundplane" />
+  </worldbody>
+  <keyframe>
+    <key name="standing" qpos="0 0 0.288587507178 0.999999999802 -1.99189754275e-05 0 0 0.1 1.175 -2.35 -0.1 1.175 -2.35 0.1 1.175 -2.35 -0.1 1.175 -2.35 -0.0550232642174 0.0700031555582 2.34234244461 0.0809582496831 0.34736047107 -0.123781150917" ctrl="0 0 0 0 0 0 0 0 0 0 0 0" />
+    <key name="source_zero_standing" qpos="0 0 0.522867939041 0.999949725032 -1.79879029899e-05 -0.0100273169551 0 0.1 0.8 -1.5 -0.1 0.8 -1.5 0.1 1 -1.5 -0.1 1 -1.5 0 0 0 0 0 0" ctrl="0 0 0 0 0 0 0 0 0 0 0 0" />
+    <key name="reference_work" qpos="0 0 0.288587507178 0.999999999802 -1.99189754275e-05 0 0 0.1 1.175 -2.35 -0.1 1.175 -2.35 0.1 1.175 -2.35 -0.1 1.175 -2.35 -0.0550232642174 0.0700031555582 2.34234244461 0.0809582496831 0.34736047107 -0.123781150917" ctrl="0 0 0 0 0 0 0 0 0 0 0 0" />
+  </keyframe>
+</mujoco>

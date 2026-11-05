@@ -1,0 +1,385 @@
+{
+  "scene_repo": "https://github.com/diliess/robosimstudio.git",
+  "dev_base_commit": "41008da",
+  "robot_source": "user-supplied /home/idea/code/go2_rl_lab",
+  "models": "B2 no lidar/guard + E05L-Pro, original shared welding torch",
+  "source_metadata": "assets/assembled/source/source/go2_rl_lab/go2_rl_lab/assets/urdf/b2_e05l_pro/",
+  "preserved": "source geometry, transforms, joint limits, colliders and inertias; duplicates retained",
+  "added_mount_plate_kg": 0.0,
+  "mount_plate_status": "removed per user request; source mount transform retained",
+  "source_files": [
+    {
+      "path": "assets/assembled/source/LICENSE",
+      "bytes": 14440,
+      "sha256": "4ea44fef12365648550aab7f5f843930612f6378ea01608bc5d8778ff2cc05c4"
+    },
+    {
+      "path": "assets/assembled/source/deploy/deploy_mujoco/assets/b2/FL_calf.obj",
+      "bytes": 672991,
+      "sha256": "03919f68e467d21b8e36de50e43b0c55c7fe2577132f3d8f4a3565d05568f211"
+    },
+    {
+      "path": "assets/assembled/source/deploy/deploy_mujoco/assets/b2/FL_foot.obj",
+      "bytes": 1134008,
+      "sha256": "7d1d76d8ed55e3bae20dc8bc1cfdf1ca90453cee7ccab4764d31908b52249bf4"
+    },
+    {
+      "path": "assets/assembled/source/deploy/deploy_mujoco/assets/b2/FL_hip.obj",
+      "bytes": 168726,
+      "sha256": "5e3942ae305c6f9f0fa074f9c92195345948bc953a5a40e7005656730133a41a"
+    },
+    {
+      "path": "assets/assembled/source/deploy/deploy_mujoco/assets/b2/FL_thigh.obj",
+      "bytes": 656761,
+      "sha256": "b794d94f88310d331016855dcd91df3abdad965a81f668d25fcfc7cdcc85762b"
+    },
+    {
+      "path": "assets/assembled/source/deploy/deploy_mujoco/assets/b2/FL_thigh_protect.obj",
+      "bytes": 407319,
+      "sha256": "96b7881bd5664640bfea00fa74419903639f128a39fb24d8fe20a56950e11be4"
+    },
+    {
+      "path": "assets/assembled/source/deploy/deploy_mujoco/assets/b2/FR_calf.obj",
+      "bytes": 672991,
+      "sha256": "03919f68e467d21b8e36de50e43b0c55c7fe2577132f3d8f4a3565d05568f211"
+    },
+    {
+      "path": "assets/assembled/source/deploy/deploy_mujoco/assets/b2/FR_foot.obj",
+      "bytes": 1134008,
+      "sha256": "7d1d76d8ed55e3bae20dc8bc1cfdf1ca90453cee7ccab4764d31908b52249bf4"
+    },
+    {
+      "path": "assets/assembled/source/deploy/deploy_mujoco/assets/b2/FR_hip.obj",
+      "bytes": 168209,
+      "sha256": "23b89b015a6c30bc8423a81d547ed41cfe0fa0d1d60f922c9dd8379139d22b83"
+    },
+    {
+      "path": "assets/assembled/source/deploy/deploy_mujoco/assets/b2/FR_thigh.obj",
+      "bytes": 1516972,
+      "sha256": "c7caaa7ec3b143dbcda8980bd440217f30340cce739990f6883a3569b0b18af9"
+    },
+    {
+      "path": "assets/assembled/source/deploy/deploy_mujoco/assets/b2/FR_thigh_protect.obj",
+      "bytes": 408074,
+      "sha256": "9be071bbcac19c8c0d4063c7903b54fb3820e551180e297bee993e45362e1552"
+    },
+    {
+      "path": "assets/assembled/source/deploy/deploy_mujoco/assets/b2/RL_calf.obj",
+      "bytes": 672991,
+      "sha256": "03919f68e467d21b8e36de50e43b0c55c7fe2577132f3d8f4a3565d05568f211"
+    },
+    {
+      "path": "assets/assembled/source/deploy/deploy_mujoco/assets/b2/RL_foot.obj",
+      "bytes": 1134008,
+      "sha256": "7d1d76d8ed55e3bae20dc8bc1cfdf1ca90453cee7ccab4764d31908b52249bf4"
+    },
+    {
+      "path": "assets/assembled/source/deploy/deploy_mujoco/assets/b2/RL_hip.obj",
+      "bytes": 165316,
+      "sha256": "6e2879adc22ac042a5496cc34e4b33899629bba7551409694e63ac6000c553a0"
+    },
+    {
+      "path": "assets/assembled/source/deploy/deploy_mujoco/assets/b2/RL_thigh.obj",
+      "bytes": 656761,
+      "sha256": "b794d94f88310d331016855dcd91df3abdad965a81f668d25fcfc7cdcc85762b"
+    },
+    {
+      "path": "assets/assembled/source/deploy/deploy_mujoco/assets/b2/RL_thigh_protect.obj",
+      "bytes": 407319,
+      "sha256": "96b7881bd5664640bfea00fa74419903639f128a39fb24d8fe20a56950e11be4"
+    },
+    {
+      "path": "assets/assembled/source/deploy/deploy_mujoco/assets/b2/RR_calf.obj",
+      "bytes": 672991,
+      "sha256": "03919f68e467d21b8e36de50e43b0c55c7fe2577132f3d8f4a3565d05568f211"
+    },
+    {
+      "path": "assets/assembled/source/deploy/deploy_mujoco/assets/b2/RR_foot.obj",
+      "bytes": 1134008,
+      "sha256": "7d1d76d8ed55e3bae20dc8bc1cfdf1ca90453cee7ccab4764d31908b52249bf4"
+    },
+    {
+      "path": "assets/assembled/source/deploy/deploy_mujoco/assets/b2/RR_hip.obj",
+      "bytes": 165423,
+      "sha256": "8518c8bc919782381dce1dcc170e5d2c0621e8bf6de40d78ec98d8b48ba8eadf"
+    },
+    {
+      "path": "assets/assembled/source/deploy/deploy_mujoco/assets/b2/RR_thigh.obj",
+      "bytes": 1516972,
+      "sha256": "c7caaa7ec3b143dbcda8980bd440217f30340cce739990f6883a3569b0b18af9"
+    },
+    {
+      "path": "assets/assembled/source/deploy/deploy_mujoco/assets/b2/RR_thigh_protect.obj",
+      "bytes": 408074,
+      "sha256": "9be071bbcac19c8c0d4063c7903b54fb3820e551180e297bee993e45362e1552"
+    },
+    {
+      "path": "assets/assembled/source/deploy/deploy_mujoco/assets/b2/base_link_no_lidar_guard.obj",
+      "bytes": 16173163,
+      "sha256": "11a60b23284e40df496deddeda635cd94801726be6b0fcf12b9b5e169eec2937"
+    },
+    {
+      "path": "assets/assembled/source/deploy/deploy_mujoco/assets/b2/f_oc_link.obj",
+      "bytes": 7653,
+      "sha256": "f6e8e5851e3b3af7dc21f87cd28e20b23217d47e342d455a4db4ef40e87e7538"
+    },
+    {
+      "path": "assets/assembled/source/deploy/deploy_mujoco/assets/b2/fake_head_Link.STL",
+      "bytes": 117684,
+      "sha256": "13217752a70e3c1538ba834d2a8ef203d71e2a0ea9034d124232f3d08b03a08a"
+    },
+    {
+      "path": "assets/assembled/source/deploy/deploy_mujoco/assets/b2/fake_imu_link.STL",
+      "bytes": 117684,
+      "sha256": "13217752a70e3c1538ba834d2a8ef203d71e2a0ea9034d124232f3d08b03a08a"
+    },
+    {
+      "path": "assets/assembled/source/deploy/deploy_mujoco/assets/b2/fake_tail_link.STL",
+      "bytes": 117684,
+      "sha256": "13217752a70e3c1538ba834d2a8ef203d71e2a0ea9034d124232f3d08b03a08a"
+    },
+    {
+      "path": "assets/assembled/source/deploy/deploy_mujoco/assets/b2/logo_left.obj",
+      "bytes": 272124,
+      "sha256": "0887aa24c5178af99fd95742a6177c5697f7f49eb9dd5862ca27867d66887bd2"
+    },
+    {
+      "path": "assets/assembled/source/deploy/deploy_mujoco/assets/b2/logo_right.obj",
+      "bytes": 272963,
+      "sha256": "c94c9b364a612c91521fa65f82e51fc9b1720ca9ad16740ed49d3fa3dca448e9"
+    },
+    {
+      "path": "assets/assembled/source/deploy/deploy_mujoco/assets/b2/r_oc_link.obj",
+      "bytes": 7737,
+      "sha256": "c2448a40b0e697f827067ee8a3e0772b29aa48249da091b07311687253b9ca1a"
+    },
+    {
+      "path": "assets/assembled/source/deploy/deploy_mujoco/assets/b2_e05l_pro_simplified.xml",
+      "bytes": 32312,
+      "sha256": "1138cfb19b44a5ae361859ce2706e71db78e717ea3711c2537ad39a72c829ed4"
+    },
+    {
+      "path": "assets/assembled/source/deploy/deploy_mujoco/assets/e05l_pro/meshes/Link1.STL",
+      "bytes": 2804384,
+      "sha256": "82c522cff2e55ebc96cc5c5b8d641f23ad05a8fb807acc539ddefea17a33b961"
+    },
+    {
+      "path": "assets/assembled/source/deploy/deploy_mujoco/assets/e05l_pro/meshes/Link2.STL",
+      "bytes": 1795484,
+      "sha256": "2443801482c5e1bfb7cb8e7ed5f3c00d6737369e42dc7d9d84dffb20646bc03d"
+    },
+    {
+      "path": "assets/assembled/source/deploy/deploy_mujoco/assets/e05l_pro/meshes/Link3.STL",
+      "bytes": 2938684,
+      "sha256": "e148e18c8dcafe8841d3913f86e4d34451b005e314c0ff6bc1b92e51e21778c1"
+    },
+    {
+      "path": "assets/assembled/source/deploy/deploy_mujoco/assets/e05l_pro/meshes/Link4.STL",
+      "bytes": 2021584,
+      "sha256": "b4b5a60aee286c583f2fdc8de4c0093b2a19cfe7935f7236e07cbf8fd2159e05"
+    },
+    {
+      "path": "assets/assembled/source/deploy/deploy_mujoco/assets/e05l_pro/meshes/Link5.STL",
+      "bytes": 2120884,
+      "sha256": "c0d56e9c61db4cea65e3a6c7b125660b54f173c74ab7353abe3c973bddc5ef72"
+    },
+    {
+      "path": "assets/assembled/source/deploy/deploy_mujoco/assets/e05l_pro/meshes/Link6.STL",
+      "bytes": 2706484,
+      "sha256": "5df8a819aa67299b2ba412a8b086da9950ec927df8ae7c7724e71e3d24f89f8e"
+    },
+    {
+      "path": "assets/assembled/source/deploy/deploy_mujoco/assets/e05l_pro/meshes/base_link.STL",
+      "bytes": 1993984,
+      "sha256": "98e2fe2f9d738328e0d407f369a0faf7de0ba133b020af5c52d62004cd1e5ddf"
+    },
+    {
+      "path": "assets/assembled/source/deploy/deploy_mujoco/assets/e05l_pro/meshes/end_Link.STL",
+      "bytes": 2997784,
+      "sha256": "b205b1210d452f12b9a5a6e6b80fcb9a974376da600d2a84495562e1c125bf49"
+    },
+    {
+      "path": "assets/assembled/source/deploy/deploy_mujoco/assets/e10l_pro/meshes/torch_connected_hull_00.stl",
+      "bytes": 1226184,
+      "sha256": "75b26c53de49785413f6420c97e30303b2ec24347aa62a6f6d9868cc8058d003"
+    },
+    {
+      "path": "assets/assembled/source/deploy/deploy_mujoco/assets/e10l_pro/meshes/torch_connected_hull_01.stl",
+      "bytes": 311284,
+      "sha256": "42a5cf603ee15c904308feb26f734c0e8aa9aa330d81d870b9e7d59983059f5c"
+    },
+    {
+      "path": "assets/assembled/source/deploy/deploy_mujoco/assets/e10l_pro/meshes/torch_connected_hull_02.stl",
+      "bytes": 854184,
+      "sha256": "09f98c89d1d2a82b0a3c188134792acf53cb4b37913cc48d1455864dc49f0d54"
+    },
+    {
+      "path": "assets/assembled/source/deploy/deploy_mujoco/assets/e10l_pro/meshes/torch_connected_hull_03.stl",
+      "bytes": 85184,
+      "sha256": "9bf6d6e2ccc57610039896826c972aa8dc190a8bf0648d5414687e38bb48cca8"
+    },
+    {
+      "path": "assets/assembled/source/deploy/deploy_mujoco/assets/e10l_pro/meshes/torch_connected_hull_04.stl",
+      "bytes": 85084,
+      "sha256": "0987f95acecc97fa8f4b0caa1b404b9a533ee55a4c0cdbfd8b309442d3c3bc67"
+    },
+    {
+      "path": "assets/assembled/source/deploy/deploy_mujoco/assets/e10l_pro/meshes/torch_connected_hull_05.stl",
+      "bytes": 59084,
+      "sha256": "c2c9dc84152fc32c2bed59d66346635bdc506caf26ab52261d64fafce041152f"
+    },
+    {
+      "path": "assets/assembled/source/deploy/deploy_mujoco/assets/e10l_pro/meshes/torch_connected_hull_06.stl",
+      "bytes": 95284,
+      "sha256": "5b1d107620657de9eea82f053734b36f394ce6352603f8820188c341b3b0f04f"
+    },
+    {
+      "path": "assets/assembled/source/deploy/deploy_mujoco/assets/e10l_pro/meshes/torch_connected_hull_07.stl",
+      "bytes": 34784,
+      "sha256": "8166ca6e70bfae9632b75035f4c7e57343c3e9d0df397a50d148b3254ec93818"
+    },
+    {
+      "path": "assets/assembled/source/deploy/deploy_mujoco/assets/e10l_pro/meshes/torch_connected_hull_08.stl",
+      "bytes": 74084,
+      "sha256": "47f863ec3f76b9f6cfc311659c89f05c82bb2b960b70c253a2d1ff7b0e7cbe54"
+    },
+    {
+      "path": "assets/assembled/source/deploy/deploy_mujoco/assets/e10l_pro/meshes/torch_connected_hull_09.stl",
+      "bytes": 23684,
+      "sha256": "66c1ac79425b4309bd5de2a43659e2fa8f67e4d2e0a94c29853ce86036b82f00"
+    },
+    {
+      "path": "assets/assembled/source/deploy/deploy_mujoco/assets/e10l_pro/meshes/torch_connected_hull_10.stl",
+      "bytes": 137184,
+      "sha256": "425a559abf6bab3bef6e9af2b98deabadd6743b7df4fbf58ee66ad7c0222c397"
+    },
+    {
+      "path": "assets/assembled/source/deploy/deploy_mujoco/assets/e10l_pro/meshes/torch_connected_hull_11.stl",
+      "bytes": 252484,
+      "sha256": "6ae807a8a5cf35923dc22279a227ae335f1d93815e78f8ba002938a268f5a46a"
+    },
+    {
+      "path": "assets/assembled/source/deploy/deploy_mujoco/assets/e10l_pro/meshes/torch_connected_hull_12.stl",
+      "bytes": 252484,
+      "sha256": "8ffb04eba85db1e4fa84f0d72000b0069af999014cd40a3148f29acc9191b42a"
+    },
+    {
+      "path": "assets/assembled/source/deploy/deploy_mujoco/assets/e10l_pro/meshes/torch_connected_hull_13.stl",
+      "bytes": 252484,
+      "sha256": "083ebd87e51831d8b57e5140d42c8313d6363b153c27d1605ae54ed3f2bba747"
+    },
+    {
+      "path": "assets/assembled/source/deploy/deploy_mujoco/assets/e10l_pro/meshes/torch_connected_hull_14.stl",
+      "bytes": 239884,
+      "sha256": "62b6ff3e2c8427b8211f41093ca3b746ace2ad003f3e01c416b842b7c1a5e3fb"
+    },
+    {
+      "path": "assets/assembled/source/deploy/deploy_mujoco/assets/e10l_pro/meshes/torch_connected_hull_15.stl",
+      "bytes": 94984,
+      "sha256": "9d10d4f334770f95d729299266e453be0aa8577bfcb3de397df51655ea8c5e33"
+    },
+    {
+      "path": "assets/assembled/source/deploy/deploy_mujoco/assets/e10l_pro/meshes/torch_connected_hull_16.stl",
+      "bytes": 102684,
+      "sha256": "567d2db07f7b9679a6609a1f9c47f50780754a3ffad7750e60d43fafdaa31e97"
+    },
+    {
+      "path": "assets/assembled/source/deploy/deploy_mujoco/assets/e10l_pro/meshes/torch_connected_hull_17.stl",
+      "bytes": 43784,
+      "sha256": "1670131be671a43eb91fc6139e25400d451ddec9333f201c9f9b98625f099cb1"
+    },
+    {
+      "path": "assets/assembled/source/deploy/deploy_mujoco/assets/e10l_pro/meshes/torch_connected_hull_18.stl",
+      "bytes": 43084,
+      "sha256": "daaf0a04991fdbbf48c18f0dba1abff8517736ca9cb07af8264bded86bacd35f"
+    },
+    {
+      "path": "assets/assembled/source/deploy/deploy_mujoco/assets/e10l_pro/meshes/torch_connected_hull_19.stl",
+      "bytes": 43084,
+      "sha256": "2fabf68d950520d5f65bb216d21506a0944ca1757913ec050c49431f55ea4e32"
+    },
+    {
+      "path": "assets/assembled/source/deploy/deploy_mujoco/assets/e10l_pro/meshes/torch_connected_hull_20.stl",
+      "bytes": 43184,
+      "sha256": "575250ba5e529bcf5aec9f1ecff4cdf9a6a885389331eb17b11d6c87db3a33d8"
+    },
+    {
+      "path": "assets/assembled/source/deploy/deploy_mujoco/assets/e10l_pro/meshes/torch_connected_hull_21.stl",
+      "bytes": 43084,
+      "sha256": "783ee91ec3a5a6e3a3b028c6b1c6d928b62b04124eda69d94e5833c5a4e5bb1b"
+    },
+    {
+      "path": "assets/assembled/source/deploy/deploy_mujoco/assets/e10l_pro/meshes/torch_connected_hull_22.stl",
+      "bytes": 38484,
+      "sha256": "6f58ca33d9699ecc744c54d3b21268786adae5b0bb6d55f24fd13c89704a4a12"
+    },
+    {
+      "path": "assets/assembled/source/deploy/deploy_mujoco/assets/e10l_pro/meshes/torch_connected_hull_23.stl",
+      "bytes": 86284,
+      "sha256": "4e129a3a0455bbdd5af13634fcc7c322238a1ab527cd00b77183c4ab7204ca72"
+    },
+    {
+      "path": "assets/assembled/source/deploy/deploy_mujoco/assets/e10l_pro/meshes/torch_connected_hull_24.stl",
+      "bytes": 49984,
+      "sha256": "f56715838c512482b42aa1b2f285e6044049b47cfb64e04075a468e79fb6cd3a"
+    },
+    {
+      "path": "assets/assembled/source/deploy/deploy_mujoco/assets/e10l_pro/meshes/torch_connected_hull_25.stl",
+      "bytes": 29684,
+      "sha256": "cb28d967772f15b4d038661e79c021266e33bb2d99b7cfcdc272582f274759d4"
+    },
+    {
+      "path": "assets/assembled/source/deploy/deploy_mujoco/assets/e10l_pro/meshes/welding_torch.obj",
+      "bytes": 14606990,
+      "sha256": "aeb86e5073399e4f2b76ac7f67210eab56f7ecab3dd10cdec159ae591f407dce"
+    },
+    {
+      "path": "assets/assembled/source/deploy/deploy_mujoco/assets/flat_b2_e05l_pro_simplified.xml",
+      "bytes": 1746,
+      "sha256": "015bb0d7168ece7ad4dc1eda1cbd84ee7c2f497bd0e3955a253d982ef524994d"
+    },
+    {
+      "path": "assets/assembled/source/source/go2_rl_lab/go2_rl_lab/assets/urdf/b2_e05l_pro/b2_e05l_pro_simplified.urdf",
+      "bytes": 45624,
+      "sha256": "52f11059ae40a5140b498ea942bc4df88269ae2c5b3cb26ce7a0a25beac2989a"
+    },
+    {
+      "path": "assets/assembled/source/source/go2_rl_lab/go2_rl_lab/assets/urdf/b2_e05l_pro/integration.json",
+      "bytes": 7978,
+      "sha256": "56cd55f1a3ce3c327f1b0bc119372e61b9f42ae96d0eb9773b1798d064a87b0c"
+    },
+    {
+      "path": "assets/assembled/source/source/go2_rl_lab/go2_rl_lab/assets/urdf/b2_e05l_pro/visualization_pose.json",
+      "bytes": 865,
+      "sha256": "3da21e28a1f18a4a1b7ff2b0f2e1b4c0b41864a87ed42e49586eb76068d73d2c"
+    },
+    {
+      "path": "assets/assembled/source/source/go2_rl_lab/go2_rl_lab/assets/urdf/b2_e05l_pro/welding_tip.json",
+      "bytes": 798,
+      "sha256": "252cbaa14395480ddb74e444f0aabe7d6045245273f12e2f92080fe0171dcfe8"
+    },
+    {
+      "path": "assets/assembled/source/source/go2_rl_lab/go2_rl_lab/assets/urdf/camera_mount/assets/camera_d435.stl",
+      "bytes": 2636384,
+      "sha256": "f95ffaffb66b9aa434a7bc24ab584065535cc322708831dc5e24c0f26fa741d3"
+    }
+  ],
+  "total_robot_mass_kg": 96.68502053281073,
+  "scene_material_assets": [
+    {
+      "path": "textures/rolled_steel_albedo.png",
+      "sha256": "19a769ff1c181111bea0a17458ab7ae505aa3626401e38c4993c14eb120282c5",
+      "source": "procedural steel_surface.py, seed 418; no external image source"
+    },
+    {
+      "path": "textures/rolled_steel_normal.png",
+      "sha256": "7169562c4311f062bd5ea2044a7270ed7cf1a11ec99ca9677fe184e56cdffb0f",
+      "source": "procedural steel_surface.py, seed 418; no external image source"
+    },
+    {
+      "path": "textures/rolled_steel_roughness.png",
+      "sha256": "d78c6b7255b1742dd1f45101975f36520f96d579a1a69d5ac97e5f4edd8cf134",
+      "source": "procedural steel_surface.py, seed 418; no external image source"
+    }
+  ]
+}

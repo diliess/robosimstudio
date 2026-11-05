@@ -1,0 +1,257 @@
+{
+  "source": "/home/xjtu/models/E05L-Pro_URDF_01/urdf/E05L-Pro_URDF_02.urdf",
+  "source_sha256": "c88a15f2edd11941f9a4c86280743875483d90299a37233c4471b97a7cb6cd20",
+  "robot": "B2 simplified + E05L-Pro (source package E05L-Pro_URDF_02)",
+  "mount_pos": [
+    -0.025,
+    0.02,
+    0.075
+  ],
+  "mount_rpy": [
+    0,
+    0,
+    0
+  ],
+  "mount_status": "Common comparison mount copied from E10L selection; NOT optimized or dynamically validated for E05L",
+  "arm_mass_kg": 16.92022053281073,
+  "combined_mjcf_mass_kg": 96.68502053281073,
+  "revolute_joints": 18,
+  "arm_revolute_joints": 6,
+  "arm_actuator_limits": "source effort=velocity=0 retained; no arm motors/drives inferred",
+  "mujoco_joint_numerical_defaults": {
+    "damping": 0,
+    "armature": 0.01,
+    "frictionloss": 0.01,
+    "status": "inherited converter defaults, not manufacturer-identified parameters"
+  },
+  "tool": "Shared E10L torch with user-specified 5 kg mass; CAD-estimated COM/inertia; original flange transform",
+  "tool_payload": {
+    "mass_kg": 5.0,
+    "frame": "welding_torch link",
+    "com_m": [
+      -0.13885924138177322,
+      -0.021053323772952322,
+      0.03622884904902154
+    ],
+    "inertia_com_kg_m2": [
+      [
+        0.07864412056091188,
+        -0.006271663631473763,
+        -0.023567450845694993
+      ],
+      [
+        -0.006271663631473763,
+        0.12106046050798516,
+        -0.0026069800032127674
+      ],
+      [
+        -0.023567450845694993,
+        -0.0026069800032127674,
+        0.04617314330169455
+      ]
+    ],
+    "principal_moments_kg_m2": [
+      0.0334773058233814,
+      0.09042201621369234,
+      0.12197840233351787
+    ],
+    "mesh": "deploy/deploy_mujoco/assets/e10l_pro/meshes/welding_torch.STL",
+    "mesh_sha256": "e2a6061013dae6991d51dc525cca9ce8a16c825b224c7289ad364e8ec8465e54",
+    "cad_volume_m3": 0.000640597477466997,
+    "components": [
+      {
+        "component": 0,
+        "watertight_source": true,
+        "method": "closed CAD solid",
+        "volume_m3": 5.007723409820006e-05
+      },
+      {
+        "component": 1,
+        "watertight_source": true,
+        "method": "closed CAD solid",
+        "volume_m3": 8.03403679010731e-05
+      },
+      {
+        "component": 2,
+        "watertight_source": false,
+        "method": "component convex hull for open surface",
+        "volume_m3": 2.0677374351987277e-05
+      },
+      {
+        "component": 3,
+        "watertight_source": true,
+        "method": "closed CAD solid",
+        "volume_m3": 7.933574925351653e-07
+      },
+      {
+        "component": 4,
+        "watertight_source": true,
+        "method": "closed CAD solid",
+        "volume_m3": 7.933600719877117e-07
+      },
+      {
+        "component": 5,
+        "watertight_source": true,
+        "method": "closed CAD solid",
+        "volume_m3": 8.852649117456246e-05
+      },
+      {
+        "component": 6,
+        "watertight_source": true,
+        "method": "closed CAD solid",
+        "volume_m3": 6.333610605771822e-05
+      },
+      {
+        "component": 7,
+        "watertight_source": true,
+        "method": "closed CAD solid",
+        "volume_m3": 6.933886408738286e-05
+      },
+      {
+        "component": 8,
+        "watertight_source": true,
+        "method": "closed CAD solid",
+        "volume_m3": 6.82217375762018e-05
+      },
+      {
+        "component": 9,
+        "watertight_source": true,
+        "method": "closed CAD solid",
+        "volume_m3": 7.061182977083945e-05
+      },
+      {
+        "component": 10,
+        "watertight_source": true,
+        "method": "closed CAD solid",
+        "volume_m3": 2.3319307103871628e-05
+      },
+      {
+        "component": 11,
+        "watertight_source": true,
+        "method": "closed CAD solid",
+        "volume_m3": 1.604378409454632e-07
+      },
+      {
+        "component": 12,
+        "watertight_source": true,
+        "method": "closed CAD solid",
+        "volume_m3": 1.6043559110050802e-07
+      },
+      {
+        "component": 13,
+        "watertight_source": true,
+        "method": "closed CAD solid",
+        "volume_m3": 1.6043540640105113e-07
+      },
+      {
+        "component": 14,
+        "watertight_source": true,
+        "method": "closed CAD solid",
+        "volume_m3": 1.1092762542176857e-07
+      },
+      {
+        "component": 15,
+        "watertight_source": false,
+        "method": "component convex hull for open surface",
+        "volume_m3": 6.2317334153129e-07
+      },
+      {
+        "component": 16,
+        "watertight_source": false,
+        "method": "component convex hull for open surface",
+        "volume_m3": 5.172118359609096e-06
+      },
+      {
+        "component": 17,
+        "watertight_source": true,
+        "method": "closed CAD solid",
+        "volume_m3": 9.126400908886826e-05
+      },
+      {
+        "component": 18,
+        "watertight_source": true,
+        "method": "closed CAD solid",
+        "volume_m3": 7.30701326655476e-07
+      },
+      {
+        "component": 19,
+        "watertight_source": true,
+        "method": "closed CAD solid",
+        "volume_m3": 7.307013606206945e-07
+      },
+      {
+        "component": 20,
+        "watertight_source": true,
+        "method": "closed CAD solid",
+        "volume_m3": 7.307014037992795e-07
+      },
+      {
+        "component": 21,
+        "watertight_source": true,
+        "method": "closed CAD solid",
+        "volume_m3": 7.307015595316764e-07
+      },
+      {
+        "component": 22,
+        "watertight_source": false,
+        "method": "component convex hull for open surface",
+        "volume_m3": 3.679059114545289e-07
+      },
+      {
+        "component": 23,
+        "watertight_source": true,
+        "method": "closed CAD solid",
+        "volume_m3": 3.3657381070813395e-07
+      },
+      {
+        "component": 24,
+        "watertight_source": false,
+        "method": "component convex hull for open surface",
+        "volume_m3": 1.6176075578948458e-08
+      },
+      {
+        "component": 25,
+        "watertight_source": false,
+        "method": "component convex hull for open surface",
+        "volume_m3": 3.2664490784108945e-06
+      }
+    ],
+    "assumption": "Uniform density over CAD component solids; open components use individual convex hulls. Component volumes are added, overlapping CAD parts are not unioned. Total mass normalised to user-specified 5 kg; COM and inertia are estimates, not manufacturer or measured values.",
+    "source_arm_inertias_modified": false,
+    "collision_method": "26 connected-component convex hulls shared by both arms"
+  },
+  "tool_source_urdf": "source/go2_rl_lab/go2_rl_lab/assets/urdf/b2_e10l_pro/b2_e10l_pro_simplified_optimized.urdf",
+  "tool_mount_origin": {
+    "xyz": "0 0 0",
+    "rpy": "0 0 0"
+  },
+  "tool_mount_status": "source flange alignment for short bent welding nozzle; not a calibrated hardware adapter",
+  "tool_collision": {
+    "method": "one convex hull per connected source CAD component",
+    "components": 26
+  },
+  "tool_inertia_supplied": true,
+  "duplicate_end_link_preserved": true,
+  "link6_end_link_mesh_alignment_max_error_m": 0.005542082267434903,
+  "source_parameters_modified": false,
+  "feet_floor_clearance_m": [
+    -2.735593854219509e-08,
+    2.735593893077315e-08,
+    2.7529416773974802e-08,
+    -2.7529416996019407e-08
+  ],
+  "canonical_urdf": "source/go2_rl_lab/go2_rl_lab/assets/urdf/b2_e05l_pro/b2_e05l_pro_simplified.urdf",
+  "canonical_mjcf": "deploy/deploy_mujoco/assets/b2_e05l_pro_simplified.xml",
+  "payload5kg_study": {
+    "report": "docs/b2_welding_payload5kg/README.md",
+    "summary": "docs/results/b2_welding_payload5kg_study/summary.json",
+    "recommended_mount_xyz_m": [
+      0.0,
+      0.0,
+      0.075
+    ],
+    "recommendation_scope": "best among independently confirmed 30 s candidates; not global optimum",
+    "recommendation_applied_to_canonical_model": false,
+    "canonical_mount_status": "historical comparison point retained; 5 kg E10L fails some walking cases; see current study"
+  }
+}

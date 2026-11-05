@@ -1,0 +1,39 @@
+{
+  "passed": true,
+  "test_scope": "fresh independent scene venv; archive relocated into a path with spaces; no PYTHONPATH or source-repository override; actual Isaac runtime reused through ISAAC_PYTHON",
+  "archive_input_sha256": "de607174a8913f2e400a7cdca2a58840dccdefcf0880102057153d7f58ed7633",
+  "original_scene_config_sha256": "a05e073014e67d3d6f5e5ea8e6c0b19f07768e00763df541a9300f46c32341ff",
+  "source_snapshot_is_bundled": true,
+  "archive_integrity_verified": true,
+  "gui_layer_edit_save_reload": {
+    "saved_override_x_m": 7.68,
+    "generated_base_unchanged": true,
+    "edit_layer_sha256": "55166d1c5ceeace3a63955141e7001e4b6a8b536acdd5c2e611ca31306616b92"
+  },
+  "stale_config_rejected": true,
+  "modified_config_rebuild": {
+    "A05_base_world_x_m": 7.7,
+    "A05_seam_height_m": 0.9,
+    "verified_segments_after_build": 0,
+    "old_outputs_archived": true,
+    "old_previews_archived": true
+  },
+  "gui_override_preserved_after_rebuild": true,
+  "edited_project_repacked": true,
+  "isaac_runtime": {
+    "passed": true,
+    "version": "6.2.0.0",
+    "editable_stage": true,
+    "source_stage_sha256": "61bd702edd283958548020d66c257507cbbc9f525843c53218194847de7b5150",
+    "rigid_bodies": 24,
+    "revolute_joints": 18,
+    "collision_shapes": 1154,
+    "physics_executed": false
+  },
+  "captures": [
+    "run/upload_project/relocated project/industrial_welding/run/portable_capture/butt_flat_detail.png",
+    "run/upload_project/relocated project/industrial_welding/run/portable_capture/robot.png"
+  ],
+  "scope_limit": "loading/editing/export and data invalidation verified; no full PhysX dynamics, navigation or welding execution added",
+  "map_and_render_captures_visually_reviewed": true
+}

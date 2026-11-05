@@ -1,0 +1,22 @@
+{
+  "definition": "User corrected welding position: outlet cap center of short bent nozzle",
+  "tip_branch": "short_bent_end",
+  "reference_version": 2,
+  "frame": "e05l_welding_torch",
+  "position_m": [
+    -0.011181919858109913,
+    -0.0009736146546943622,
+    0.31412248468431314
+  ],
+  "outward_axis": [
+    0.8572602145497087,
+    0.12294671839363294,
+    0.49998902886605834
+  ],
+  "method": "area-weighted centroid and outward normal of terminal short-nozzle CAD outlet plane",
+  "mesh": "deploy/deploy_mujoco/assets/e10l_pro/meshes/welding_torch.STL",
+  "mesh_sha256": "e2a6061013dae6991d51dc525cca9ce8a16c825b224c7289ad364e8ec8465e54",
+  "calibration": "geometry-derived reference, not factory-calibrated TCP",
+  "cap_triangle_count": 706,
+  "reused_from": "b2_e10l_pro/welding_tip.json"
+}

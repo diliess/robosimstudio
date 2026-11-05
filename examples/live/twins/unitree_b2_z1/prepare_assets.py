@@ -1,11 +1,17 @@
-"""Compose the official Unitree B2 MJCF and Z1 URDF without ROS dependencies."""
+"""Adapt the supplied B2 (no lidar/guard) + E05L-Pro assembly for the live scene.
+
+Geometry, inertias, limits, mounting pose and short-nozzle TCP come from
+GO2_RL_LAB_ROOT (default: the sibling go2_rl_lab checkout). A portable snapshot
+of the required source files is kept under assets/assembled/source/.
+"""
 
 from __future__ import annotations
 
 import copy
+import hashlib
 import json
-import math
-import subprocess
+import os
+import shutil
 import xml.etree.ElementTree as ET
 from pathlib import Path
 
@@ -13,13 +19,51 @@ import numpy as np
 from scipy.spatial.transform import Rotation
 
 ROOT = Path(__file__).resolve().parent
-B2 = ROOT / "assets/unitree_mujoco/unitree_robots/b2"
-Z1 = ROOT / "assets/unitree_ros/robots/z1_description"
 OUT = ROOT / "assets/assembled"
-LEG_HOME = {f"{leg}_{joint}_joint": angle for leg in ("FL", "FR", "RL", "RR")
-            for joint, angle in zip(("hip", "thigh", "calf"), (0.0, 0.75, -1.50), strict=True)}
-ARM_HOME = (0.0, 1.30, -1.60, 0.30, 0.0, 0.0)
-BASE_HEIGHT = 2.0 * 0.35 * math.cos(0.75) + 0.032
+SNAPSHOT = OUT / "source"
+SOURCE = Path(os.environ.get("GO2_RL_LAB_ROOT", str(ROOT.parents[4] / "go2_rl_lab"))).expanduser().resolve()
+MODEL_REL = Path("deploy/deploy_mujoco/assets/b2_e05l_pro_simplified.xml")
+FLAT_REL = MODEL_REL.with_name("flat_b2_e05l_pro_simplified.xml")
+META_REL = Path("source/go2_rl_lab/go2_rl_lab/assets/urdf/b2_e05l_pro")
+URDF_REL = META_REL / "b2_e05l_pro_simplified.urdf"
+
+
+def _input(relative):
+    live = SOURCE / relative
+    cached = SNAPSHOT / relative
+    if live.is_file():
+        return live
+    if cached.is_file():
+        return cached
+    raise FileNotFoundError(f"Missing B2/E05L asset: {live}. Set GO2_RL_LAB_ROOT to the supplied repository.")
+
+
+def _metadata(name):
+    return json.loads(_input(META_REL / name).read_text())
+
+
+_INTEGRATION = _metadata("integration.json")
+_POSE = _metadata("visualization_pose.json")
+_TIP = _metadata("welding_tip.json")
+DEFAULT_MOUNT_XYZ = tuple(_INTEGRATION["mount_pos"])
+DEFAULT_MOUNT_RPY = tuple(_INTEGRATION["mount_rpy"])
+ARM_JOINTS = tuple(_POSE["arm_joint_names"])
+ARM_HOME = tuple(_POSE["arm_q_rad"])
+LEG_HOME = dict(
+    zip(
+        (f"{leg}_{joint}_joint" for leg in ("FL", "FR", "RL", "RR") for joint in ("hip", "thigh", "calf")),
+        _POSE["leg_joint_positions"],
+        strict=True,
+    )
+)
+TCP_OFFSET = tuple(_TIP["position_m"])
+# Tool +z follows the source short-nozzle outlet normal; +x is perpendicular to world/local +y.
+_z = np.asarray(_TIP["outward_axis"], dtype=float)
+_z /= np.linalg.norm(_z)
+_x = np.cross((0.0, 1.0, 0.0), _z)
+_x /= np.linalg.norm(_x)
+TCP_QUAT = tuple(Rotation.from_matrix(np.column_stack((_x, np.cross(_z, _x), _z))).as_quat())
+ARM_KP, ARM_KD = 50000.0, 400.0  # simulation position servos, not manufacturer motor ratings
 
 
 def steel_texture(kind="base"):
@@ -39,169 +83,130 @@ def steel_texture(kind="base"):
     return output
 
 
-def numbers(values):
-    return " ".join(f"{float(value):.10g}" for value in values)
+def _sha(path):
+    with path.open("rb") as stream:
+        return hashlib.file_digest(stream, "sha256").hexdigest()
 
 
-def origin(node):
-    if node is None:
-        return {}
-    result = {"pos": node.get("xyz", "0 0 0")}
-    rpy = np.fromstring(node.get("rpy", "0 0 0"), sep=" ")
-    xyzw = Rotation.from_euler("xyz", rpy).as_quat()
-    result["quat"] = numbers((xyzw[3], *xyzw[:3]))
-    return result
-
-
-def gripper_nodes():
-    """Use the optional gripper's actual geometry, inertias and hinge from xacro."""
-    properties = {}
-    for node in ET.parse(Z1 / "xacro/const.xacro").getroot():
-        if node.tag.endswith("property"):
-            try:
-                properties[node.get("name")] = float(node.get("value"))
-            except ValueError:
-                pass
-    # The source writes this one bound as ${-PI*90/180}.
-    properties["Gripper_PositionMin"] = -math.pi / 2
-    source = ET.parse(Z1 / "xacro/robot.xacro").getroot()
-    conditional = next(node for node in source if node.tag.endswith("if"))
-    result = []
-    import re
-
-    for node in conditional:
-        if node.tag not in ("link", "joint"):
-            continue
-        text = re.sub(r"\$\{([^}]+)\}", lambda match: str(properties[match[1]]),
-                      ET.tostring(node, encoding="unicode"))
-        result.append(ET.fromstring(text))
-    return result
-
-
-def visual_meshes(filename, assets):
-    """Bake Collada node transforms and retain its per-part source materials."""
-    import trimesh
-
-    source = Z1 / filename.removeprefix("package://z1_description/")
-    scene = trimesh.load(source, force="scene")
-    result = []
-    for index, node in enumerate(scene.graph.nodes_geometry):
-        transform, geometry = scene.graph[node]
-        mesh = scene.geometry[geometry].copy()
-        mesh.apply_transform(transform)
-        name = f"z1_{source.stem}_{index}"
-        output = OUT / f"{name}.obj"
-        # The MJCF material carries colour; avoid unused OBJ material sidecars.
-        output.write_text(trimesh.exchange.obj.export_obj(mesh, include_texture=False, include_color=False))
-        material = getattr(mesh.visual, "material", None)
-        color = getattr(material, "diffuse", None)
-        if color is None:
-            color = (180, 180, 185, 255)
-        rgba = np.asarray(color, dtype=float)[:4] / 255.0
-        if len(rgba) == 3:
-            rgba = np.append(rgba, 1.0)
-        ET.SubElement(assets, "mesh", name=name, file=output.name)
-        result.append((name, numbers(rgba)))
-    return result
-
-
-def prepare():
-    OUT.mkdir(parents=True, exist_ok=True)
-    output = OUT / "b2_z1.xml"
-    # Versioned cache: changing this module invalidates the generated assembly.
-    marker = OUT / "prepared.json"
-    stamp = Path(__file__).stat().st_mtime_ns
-    if output.exists() and marker.exists() and json.loads(marker.read_text()).get("source_stamp") == stamp:
-        return output
-
-    tree = ET.parse(B2 / "b2.xml")
-    root = tree.getroot()
-    root.set("model", "unitree_b2_z1")
-    root.find("compiler").set("meshdir", ".")
-    for child in list(root):
-        if child.tag in ("sensor", "keyframe", "actuator"):
-            root.remove(child)
-    assets = root.find("asset")
-    for mesh in assets.findall("mesh"):
-        mesh.set("file", f"../unitree_mujoco/unitree_robots/b2/assets/{mesh.get('file')}")
-    trunk = root.find("worldbody/body")
-    trunk.set("pos", numbers((0.0, 0.0, BASE_HEIGHT)))
-    # A rigid bolted mounting plate, part of the robot, never attached to the workpiece.
-    ET.SubElement(trunk, "geom", name="z1_mount_plate", type="box", size="0.12 0.085 0.01",
-                  pos="-0.10 0 0.085", rgba="0.12 0.14 0.17 1", density="2700")
-
-    urdf = ET.parse(Z1 / "xacro/z1.urdf").getroot()
-    for node in gripper_nodes():
-        urdf.append(node)
-    # An arm-only URDF keeps interactive IK independent of the leg and free-base DOFs.
-    arm_urdf = ET.Element("robot", name="unitree_z1_with_gripper")
-    for node in urdf:
-        if node.tag in ("link", "joint"):
-            arm_urdf.append(copy.deepcopy(node))
-    for mesh in arm_urdf.findall(".//mesh"):
-        relative = mesh.get("filename").removeprefix("package://z1_description/")
-        mesh.set("filename", f"../unitree_ros/robots/z1_description/{relative}")
-    ET.indent(arm_urdf, space="  ")
-    ET.ElementTree(arm_urdf).write(OUT / "z1_kinematics.urdf", encoding="unicode")
-    links = {link.get("name"): link for link in urdf.findall("link")}
-    joints = [joint for joint in urdf.findall("joint") if joint.get("name") != "base_static_joint"]
-    actuators = ET.SubElement(root, "actuator")
-    for name in LEG_HOME:
-        ET.SubElement(actuators, "position", name=f"stand_{name}", joint=name,
-                      kp="1800", kv="100", forcerange="-200 200" if "calf" not in name else "-300 300")
-
-    def add_link(name, parent, incoming=None):
-        link = links[name]
-        transform = origin(incoming.find("origin")) if incoming is not None else {"pos": "-0.10 0 0.095"}
-        body = ET.SubElement(parent, "body", name=f"z1_{name}", **transform)
-        inertial = link.find("inertial")
-        if inertial is not None:
-            inertia = inertial.find("inertia")
-            ET.SubElement(body, "inertial", mass=inertial.find("mass").get("value"),
-                          fullinertia=" ".join(inertia.get(k) for k in ("ixx", "iyy", "izz", "ixy", "ixz", "iyz")),
-                          pos=inertial.find("origin").get("xyz", "0 0 0"))
-        if incoming is not None and incoming.get("type") != "fixed":
-            label = f"z1_{incoming.get('name')}"
-            limit = incoming.find("limit")
-            lower = limit.get("lower", str(-math.pi / 2))
-            upper = limit.get("upper", "0")
-            ET.SubElement(body, "joint", name=label, type="hinge", axis=incoming.find("axis").get("xyz"),
-                          range=f"{lower} {upper}", damping="0.15", armature="0.01")
-            effort = limit.get("effort", "30")
-            ET.SubElement(actuators, "position", name=f"drive_{label}", joint=label,
-                          kp="500" if "Gripper" not in label else "80", kv="25" if "Gripper" not in label else "4",
-                          forcerange=f"-{effort} {effort}")
-        for visual in link.findall("visual"):
-            geometry = visual.find("geometry/mesh")
-            if geometry is not None:
-                for mesh_name, rgba in visual_meshes(geometry.get("filename"), assets):
-                    ET.SubElement(body, "geom", type="mesh", mesh=mesh_name, rgba=rgba,
-                                  contype="0", conaffinity="0", density="0", **origin(visual.find("origin")))
-        for collision in link.findall("collision"):
-            geometry = collision.find("geometry")
-            transform = origin(collision.find("origin"))
-            cylinder = geometry.find("cylinder")
-            mesh = geometry.find("mesh")
-            if cylinder is not None:
-                ET.SubElement(body, "geom", type="cylinder", size=f"{cylinder.get('radius')} {float(cylinder.get('length')) / 2}",
-                              **{"class": "collision"}, **transform)
-            elif mesh is not None:
-                source = mesh.get("filename").removeprefix("package://z1_description/")
-                label = f"z1_collision_{name}"
-                ET.SubElement(assets, "mesh", name=label, file=f"../unitree_ros/robots/z1_description/{source}")
-                ET.SubElement(body, "geom", type="mesh", mesh=label, **{"class": "collision"}, **transform)
-        for joint in joints:
-            if joint.find("parent").get("link") == name:
-                add_link(joint.find("child").get("link"), body, joint)
-
-    add_link("link00", trunk)
+def _write_xml(tree, path):
     ET.indent(tree, space="  ")
-    tree.write(output, encoding="unicode")
-    sources = []
-    for folder in ("unitree_mujoco", "unitree_ros"):
-        revision = subprocess.check_output(["git", "-C", str(ROOT / "assets" / folder), "rev-parse", "HEAD"], text=True).strip()
-        sources.append({"url": f"https://github.com/unitreerobotics/{folder}", "commit": revision})
-    marker.write_text(json.dumps({"source_stamp": stamp, "sources": sources,
-                                 "mount_xyz": [-0.10, 0.0, 0.095], "leg_home": LEG_HOME,
-                                 "arm_home": ARM_HOME, "base_height": BASE_HEIGHT}, indent=2) + "\n")
+    tree.write(path, encoding="unicode")
+
+
+def prepare(*, mount_xyz=DEFAULT_MOUNT_XYZ, mount_rpy=DEFAULT_MOUNT_RPY):
+    """Keep the supplied combined robot; change only paths, home and simulation drives."""
+    OUT.mkdir(parents=True, exist_ok=True)
+    output = OUT / "b2_e05l_pro.xml"
+    marker = OUT / "prepared_e05l.json"
+    tree = ET.parse(_input(MODEL_REL))
+    robot = tree.getroot()
+    files = {
+        MODEL_REL,
+        FLAT_REL,
+        URDF_REL,
+        *(META_REL / n for n in ("integration.json", "visualization_pose.json", "welding_tip.json")),
+    }
+    if (SOURCE / "LICENSE").is_file() or (SNAPSHOT / "LICENSE").is_file():
+        files.add(Path("LICENSE"))
+    meshdir = robot.find("compiler").get("meshdir", ".")
+    mesh_paths = []
+    for mesh in robot.findall("asset/mesh"):
+        relative = (SOURCE / MODEL_REL.parent / meshdir / mesh.get("file")).resolve().relative_to(SOURCE)
+        path = _input(relative)
+        with path.open("rb") as stream:
+            if stream.read(80).startswith(b"version https://git-lfs.github.com/spec/v1"):
+                raise RuntimeError(f"Git LFS mesh not downloaded: {path}; run git lfs pull in go2_rl_lab")
+        files.add(relative)
+        mesh_paths.append((mesh, relative))
+    signature = {
+        "adapter_sha256": _sha(Path(__file__)),
+        "mount_xyz": list(mount_xyz),
+        "mount_rpy": list(mount_rpy),
+        "inputs": {str(rel): _sha(_input(rel)) for rel in sorted(files)},
+    }
+    if output.is_file() and (OUT / "e05l_kinematics.urdf").is_file() and marker.is_file():
+        if json.loads(marker.read_text()).get("signature") == signature:
+            return output
+    for relative in sorted(files):
+        src, dst = _input(relative), SNAPSHOT / relative
+        dst.parent.mkdir(parents=True, exist_ok=True)
+        if src.resolve() != dst.resolve() and (not dst.is_file() or _sha(dst) != signature["inputs"][str(relative)]):
+            shutil.copy2(src, dst)
+    for mesh, relative in mesh_paths:
+        mesh.set("file", (Path("source") / relative).as_posix())
+    robot.find("compiler").set("meshdir", ".")
+    for name in ("sensor", "keyframe", "actuator"):
+        for node in list(robot.findall(name)):
+            robot.remove(node)
+    base = robot.find("worldbody/body[@name='base_link']")
+    standing = ET.parse(_input(FLAT_REL)).getroot().find("keyframe/key[@name='standing']")
+    qpos = np.fromstring(standing.get("qpos"), sep=" ")
+    base.set("pos", " ".join(map(str, qpos[:3])))
+    base.set("quat", " ".join(map(str, qpos[3:7])))
+    mount = base.find("body[@name='e05l_base_link']")
+    mount.set("pos", " ".join(map(str, mount_xyz)))
+    xyzw = Rotation.from_euler("xyz", mount_rpy).as_quat()
+    mount.set("quat", " ".join(map(str, (xyzw[3], *xyzw[:3]))))
+    actuators = ET.SubElement(robot, "actuator")
+    original = ET.parse(_input(MODEL_REL)).getroot()
+    torque_limits = {n.get("joint"): n.get("ctrlrange") for n in original.findall("actuator/motor")}
+    for joint in LEG_HOME:
+        ET.SubElement(
+            actuators,
+            "position",
+            name=f"stand_{joint}",
+            joint=joint,
+            kp="1800",
+            kv="100",
+            forcerange=torque_limits[joint],
+        )
+    for joint in ARM_JOINTS:
+        ET.SubElement(
+            actuators,
+            "position",
+            name=f"drive_{joint}",
+            joint=joint,
+            kp=str(ARM_KP),
+            kv=str(ARM_KD),
+            forcelimited="false",
+        )
+    _write_xml(tree, output)
+    # A six-axis kinematic model with the original URDF origins and limits.
+    # Mesh-free links avoid an unrelated second geometry import in the IK solver.
+    urdf = ET.parse(_input(URDF_REL)).getroot()
+    arm = ET.Element("robot", name="e05l_pro_with_welding_torch")
+    links = {n.get("name") for n in urdf.findall("link") if n.get("name").startswith("e05l_")}
+    for node in urdf:
+        if node.tag == "link" and node.get("name") in links:
+            link = copy.deepcopy(node)
+            for child in list(link):
+                if child.tag in ("visual", "collision"):
+                    link.remove(child)
+            arm.append(link)
+        elif node.tag == "joint" and all(node.find(endpoint).get("link") in links for endpoint in ("parent", "child")):
+            arm.append(copy.deepcopy(node))
+    _write_xml(ET.ElementTree(arm), OUT / "e05l_kinematics.urdf")
+    marker.write_text(
+        json.dumps(
+            {
+                "signature": signature,
+                "source_root": str(SOURCE),
+                "model": str(MODEL_REL),
+                "mount_frame": "B2 base_link",
+                "tcp": _TIP,
+                "source_mass_kg": _INTEGRATION["combined_mjcf_mass_kg"],
+                "leg_home": LEG_HOME,
+                "arm_home": ARM_HOME,
+                "simulation_servos": {
+                    "leg_kp": 1800,
+                    "leg_kd": 100,
+                    "arm_kp": ARM_KP,
+                    "arm_kd": ARM_KD,
+                    "arm_effort_status": "unlimited simulation servo; source motor ratings unknown",
+                },
+            },
+            indent=2,
+        )
+        + "\n"
+    )
     return output

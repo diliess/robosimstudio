@@ -1,0 +1,122 @@
+{
+  "pass": true,
+  "source": "two separately modeled convex steel plates with physical single-V edge preparation",
+  "weld_state": "unwelded preparation; no completed bead",
+  "stations": [
+    {
+      "id": "A02",
+      "incline_deg": 0,
+      "table_height_m": 0.5295000000000001,
+      "root_height_m": 0.55,
+      "solid_plate_count": 2,
+      "measured_root_gap_m": 0.001,
+      "measured_plate_thickness_m": [
+        0.01200000000000001,
+        0.01200000000000001
+      ],
+      "groove_top_opening_m": 0.00504145188432738,
+      "measured_plate_volume_m3": 0.006700927459202434,
+      "expected_plate_volume_m3": 0.006700927459202428,
+      "cradle_count": 0,
+      "cradle_underside_contact": true,
+      "seam_id": "A02.butt_center",
+      "seam_length_m": 0.86
+    },
+    {
+      "id": "A05",
+      "incline_deg": 0,
+      "table_height_m": 0.8295,
+      "root_height_m": 0.85,
+      "solid_plate_count": 2,
+      "measured_root_gap_m": 0.001,
+      "measured_plate_thickness_m": [
+        0.01200000000000001,
+        0.01200000000000001
+      ],
+      "groove_top_opening_m": 0.00504145188432738,
+      "measured_plate_volume_m3": 0.006700927459202435,
+      "expected_plate_volume_m3": 0.006700927459202428,
+      "cradle_count": 0,
+      "cradle_underside_contact": true,
+      "seam_id": "A05.butt_center",
+      "seam_length_m": 0.86
+    },
+    {
+      "id": "A09",
+      "incline_deg": 15,
+      "table_height_m": 0.44532029784783717,
+      "root_height_m": 0.5500000000000002,
+      "solid_plate_count": 2,
+      "measured_root_gap_m": 0.0010000000000000009,
+      "measured_plate_thickness_m": [
+        0.01200000000000001,
+        0.01200000000000001
+      ],
+      "groove_top_opening_m": 0.005041451884327381,
+      "measured_plate_volume_m3": 0.006700927459202423,
+      "expected_plate_volume_m3": 0.006700927459202428,
+      "cradle_count": 2,
+      "cradle_underside_contact": true,
+      "seam_id": "A09.butt_center",
+      "seam_length_m": 0.86
+    },
+    {
+      "id": "A11",
+      "incline_deg": 30,
+      "table_height_m": 0.5286387840678323,
+      "root_height_m": 0.7000000000000001,
+      "solid_plate_count": 2,
+      "measured_root_gap_m": 0.0009999999999999454,
+      "measured_plate_thickness_m": [
+        0.012000000000000122,
+        0.01200000000000001
+      ],
+      "groove_top_opening_m": 0.0050414518843273255,
+      "measured_plate_volume_m3": 0.006700927459202428,
+      "expected_plate_volume_m3": 0.006700927459202428,
+      "cradle_count": 2,
+      "cradle_underside_contact": true,
+      "seam_id": "A11.butt_center",
+      "seam_length_m": 0.86
+    },
+    {
+      "id": "A17",
+      "incline_deg": 45,
+      "table_height_m": 0.621999693627681,
+      "root_height_m": 0.85,
+      "solid_plate_count": 2,
+      "measured_root_gap_m": 0.0010000000000000009,
+      "measured_plate_thickness_m": [
+        0.01200000000000001,
+        0.012000000000000122
+      ],
+      "groove_top_opening_m": 0.005041451884327381,
+      "measured_plate_volume_m3": 0.006700927459202427,
+      "expected_plate_volume_m3": 0.006700927459202428,
+      "cradle_count": 2,
+      "cradle_underside_contact": true,
+      "seam_id": "A17.butt_center",
+      "seam_length_m": 0.86
+    },
+    {
+      "id": "A24",
+      "incline_deg": 60,
+      "table_height_m": 0.7292628869403572,
+      "root_height_m": 1.0000000000000002,
+      "solid_plate_count": 2,
+      "measured_root_gap_m": 0.0010000000000000009,
+      "measured_plate_thickness_m": [
+        0.01200000000000001,
+        0.01200000000000001
+      ],
+      "groove_top_opening_m": 0.005041451884327381,
+      "measured_plate_volume_m3": 0.00670092745920243,
+      "expected_plate_volume_m3": 0.006700927459202428,
+      "cradle_count": 2,
+      "cradle_underside_contact": true,
+      "seam_id": "A24.butt_center",
+      "seam_length_m": 0.86
+    }
+  ],
+  "scope": "solid geometry, support contacts and sampled representative feasibility; no weld process physics"
+}

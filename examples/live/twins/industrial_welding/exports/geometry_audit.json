@@ -1,0 +1,4132 @@
+{
+  "units": "m",
+  "steel_plate_solid_intersections": [],
+  "root_boundary_max_error_m": 0.0009999999999998899,
+  "root_boundary_tolerance_m": 0.0011,
+  "root_checks": [
+    {
+      "seam_id": "A01.root_front",
+      "max_distance_to_steel_boundary_m": 0.0
+    },
+    {
+      "seam_id": "A02.butt_center",
+      "max_distance_to_steel_boundary_m": 0.0005
+    },
+    {
+      "seam_id": "A03.root_front",
+      "max_distance_to_steel_boundary_m": 0.0
+    },
+    {
+      "seam_id": "A04.vertical_up",
+      "max_distance_to_steel_boundary_m": 0.0
+    },
+    {
+      "seam_id": "A05.butt_center",
+      "max_distance_to_steel_boundary_m": 0.0005
+    },
+    {
+      "seam_id": "A06.inclined_root",
+      "max_distance_to_steel_boundary_m": 0.0
+    },
+    {
+      "seam_id": "A07.open_S_root",
+      "max_distance_to_steel_boundary_m": 0.0
+    },
+    {
+      "seam_id": "A08.open_back_root_left",
+      "max_distance_to_steel_boundary_m": 0.0
+    },
+    {
+      "seam_id": "A08.open_back_root_right",
+      "max_distance_to_steel_boundary_m": 0.0
+    },
+    {
+      "seam_id": "A08.gusset_foot",
+      "max_distance_to_steel_boundary_m": 0.0
+    },
+    {
+      "seam_id": "A08.gusset_wall_-1",
+      "max_distance_to_steel_boundary_m": 0.0
+    },
+    {
+      "seam_id": "A08.gusset_wall_1",
+      "max_distance_to_steel_boundary_m": 0.0
+    },
+    {
+      "seam_id": "A08.open_vertical_corner",
+      "max_distance_to_steel_boundary_m": 0.0
+    },
+    {
+      "seam_id": "A09.butt_center",
+      "max_distance_to_steel_boundary_m": 0.0005000000000000004
+    },
+    {
+      "seam_id": "A10.open_S_root",
+      "max_distance_to_steel_boundary_m": 0.0
+    },
+    {
+      "seam_id": "A11.butt_center",
+      "max_distance_to_steel_boundary_m": 0.0004999999999999449
+    },
+    {
+      "seam_id": "A12.open_S_root",
+      "max_distance_to_steel_boundary_m": 0.0
+    },
+    {
+      "seam_id": "A13.root_front",
+      "max_distance_to_steel_boundary_m": 0.0
+    },
+    {
+      "seam_id": "A14.open_S_root",
+      "max_distance_to_steel_boundary_m": 0.0
+    },
+    {
+      "seam_id": "A15.root_front",
+      "max_distance_to_steel_boundary_m": 0.0
+    },
+    {
+      "seam_id": "A16.open_S_root",
+      "max_distance_to_steel_boundary_m": 0.0
+    },
+    {
+      "seam_id": "A17.butt_center",
+      "max_distance_to_steel_boundary_m": 0.0004999999999999449
+    },
+    {
+      "seam_id": "A18.open_S_root",
+      "max_distance_to_steel_boundary_m": 0.0
+    },
+    {
+      "seam_id": "A19.root_front",
+      "max_distance_to_steel_boundary_m": 0.0
+    },
+    {
+      "seam_id": "A20.open_S_root",
+      "max_distance_to_steel_boundary_m": 0.0
+    },
+    {
+      "seam_id": "A21.root_front",
+      "max_distance_to_steel_boundary_m": 0.0
+    },
+    {
+      "seam_id": "A22.root_front",
+      "max_distance_to_steel_boundary_m": 0.0
+    },
+    {
+      "seam_id": "A23.root_front",
+      "max_distance_to_steel_boundary_m": 0.0
+    },
+    {
+      "seam_id": "A24.butt_center",
+      "max_distance_to_steel_boundary_m": 0.0004999999999998339
+    },
+    {
+      "seam_id": "B01.parallel_0_west_side-1",
+      "max_distance_to_steel_boundary_m": 0.0
+    },
+    {
+      "seam_id": "B01.parallel_0_west_side1",
+      "max_distance_to_steel_boundary_m": 0.0
+    },
+    {
+      "seam_id": "B01.parallel_0_west_end-5.96",
+      "max_distance_to_steel_boundary_m": 0.0
+    },
+    {
+      "seam_id": "B01.parallel_0_west_end-1.05",
+      "max_distance_to_steel_boundary_m": 0.0
+    },
+    {
+      "seam_id": "B01.parallel_0_east_side-1",
+      "max_distance_to_steel_boundary_m": 0.0
+    },
+    {
+      "seam_id": "B01.parallel_0_east_side1",
+      "max_distance_to_steel_boundary_m": 0.0
+    },
+    {
+      "seam_id": "B01.parallel_0_east_end1.05",
+      "max_distance_to_steel_boundary_m": 0.0
+    },
+    {
+      "seam_id": "B01.parallel_0_east_end5.96",
+      "max_distance_to_steel_boundary_m": 0.0
+    },
+    {
+      "seam_id": "B01.parallel_1_west_side-1",
+      "max_distance_to_steel_boundary_m": 0.0
+    },
+    {
+      "seam_id": "B01.parallel_1_west_side1",
+      "max_distance_to_steel_boundary_m": 0.0
+    },
+    {
+      "seam_id": "B01.parallel_1_west_end-5.96",
+      "max_distance_to_steel_boundary_m": 0.0
+    },
+    {
+      "seam_id": "B01.parallel_1_west_end-1.05",
+      "max_distance_to_steel_boundary_m": 0.0
+    },
+    {
+      "seam_id": "B01.parallel_1_east_side-1",
+      "max_distance_to_steel_boundary_m": 0.0
+    },
+    {
+      "seam_id": "B01.parallel_1_east_side1",
+      "max_distance_to_steel_boundary_m": 0.0
+    },
+    {
+      "seam_id": "B01.parallel_1_east_end1.05",
+      "max_distance_to_steel_boundary_m": 0.0
+    },
+    {
+      "seam_id": "B01.parallel_1_east_end5.96",
+      "max_distance_to_steel_boundary_m": 0.0
+    },
+    {
+      "seam_id": "B01.parallel_2_west_side-1",
+      "max_distance_to_steel_boundary_m": 0.0
+    },
+    {
+      "seam_id": "B01.parallel_2_west_side1",
+      "max_distance_to_steel_boundary_m": 0.0
+    },
+    {
+      "seam_id": "B01.parallel_2_west_end-5.96",
+      "max_distance_to_steel_boundary_m": 0.0
+    },
+    {
+      "seam_id": "B01.parallel_2_west_end-1.05",
+      "max_distance_to_steel_boundary_m": 0.0
+    },
+    {
+      "seam_id": "B01.parallel_2_east_side-1",
+      "max_distance_to_steel_boundary_m": 0.0
+    },
+    {
+      "seam_id": "B01.parallel_2_east_side1",
+      "max_distance_to_steel_boundary_m": 0.0
+    },
+    {
+      "seam_id": "B01.parallel_2_east_end1.05",
+      "max_distance_to_steel_boundary_m": 0.0
+    },
+    {
+      "seam_id": "B01.parallel_2_east_end5.96",
+      "max_distance_to_steel_boundary_m": 0.0
+    },
+    {
+      "seam_id": "B01.parallel_3_west_side-1",
+      "max_distance_to_steel_boundary_m": 0.0
+    },
+    {
+      "seam_id": "B01.parallel_3_west_side1",
+      "max_distance_to_steel_boundary_m": 0.0
+    },
+    {
+      "seam_id": "B01.parallel_3_west_end-5.96",
+      "max_distance_to_steel_boundary_m": 0.0
+    },
+    {
+      "seam_id": "B01.parallel_3_west_end-1.05",
+      "max_distance_to_steel_boundary_m": 0.0
+    },
+    {
+      "seam_id": "B01.parallel_3_east_side-1",
+      "max_distance_to_steel_boundary_m": 0.0
+    },
+    {
+      "seam_id": "B01.parallel_3_east_side1",
+      "max_distance_to_steel_boundary_m": 0.0
+    },
+    {
+      "seam_id": "B01.parallel_3_east_end1.05",
+      "max_distance_to_steel_boundary_m": 0.0
+    },
+    {
+      "seam_id": "B01.parallel_3_east_end5.96",
+      "max_distance_to_steel_boundary_m": 0.0
+    },
+    {
+      "seam_id": "B01.parallel_4_west_side-1",
+      "max_distance_to_steel_boundary_m": 0.0
+    },
+    {
+      "seam_id": "B01.parallel_4_west_side1",
+      "max_distance_to_steel_boundary_m": 0.0
+    },
+    {
+      "seam_id": "B01.parallel_4_west_end-5.96",
+      "max_distance_to_steel_boundary_m": 0.0
+    },
+    {
+      "seam_id": "B01.parallel_4_west_end-1.05",
+      "max_distance_to_steel_boundary_m": 0.0
+    },
+    {
+      "seam_id": "B01.parallel_4_east_side-1",
+      "max_distance_to_steel_boundary_m": 0.0
+    },
+    {
+      "seam_id": "B01.parallel_4_east_side1",
+      "max_distance_to_steel_boundary_m": 0.0
+    },
+    {
+      "seam_id": "B01.parallel_4_east_end1.05",
+      "max_distance_to_steel_boundary_m": 0.0
+    },
+    {
+      "seam_id": "B01.parallel_4_east_end5.96",
+      "max_distance_to_steel_boundary_m": 0.0
+    },
+    {
+      "seam_id": "B02.long_0_west_side-1",
+      "max_distance_to_steel_boundary_m": 0.0
+    },
+    {
+      "seam_id": "B02.long_0_west_side1",
+      "max_distance_to_steel_boundary_m": 0.0
+    },
+    {
+      "seam_id": "B02.long_0_west_end-4.987",
+      "max_distance_to_steel_boundary_m": 0.0
+    },
+    {
+      "seam_id": "B02.long_0_west_end-1.057",
+      "max_distance_to_steel_boundary_m": 0.0
+    },
+    {
+      "seam_id": "B02.long_0_east_side-1",
+      "max_distance_to_steel_boundary_m": 0.0
+    },
+    {
+      "seam_id": "B02.long_0_east_side1",
+      "max_distance_to_steel_boundary_m": 0.0
+    },
+    {
+      "seam_id": "B02.long_0_east_end1.057",
+      "max_distance_to_steel_boundary_m": 0.0
+    },
+    {
+      "seam_id": "B02.long_0_east_end4.987",
+      "max_distance_to_steel_boundary_m": 0.0
+    },
+    {
+      "seam_id": "B02.long_1_west_side-1",
+      "max_distance_to_steel_boundary_m": 0.0
+    },
+    {
+      "seam_id": "B02.long_1_west_side1",
+      "max_distance_to_steel_boundary_m": 0.0
+    },
+    {
+      "seam_id": "B02.long_1_west_end-4.987",
+      "max_distance_to_steel_boundary_m": 0.0
+    },
+    {
+      "seam_id": "B02.long_1_west_end-1.057",
+      "max_distance_to_steel_boundary_m": 0.0
+    },
+    {
+      "seam_id": "B02.long_1_east_side-1",
+      "max_distance_to_steel_boundary_m": 0.0
+    },
+    {
+      "seam_id": "B02.long_1_east_side1",
+      "max_distance_to_steel_boundary_m": 0.0
+    },
+    {
+      "seam_id": "B02.long_1_east_end1.057",
+      "max_distance_to_steel_boundary_m": 0.0
+    },
+    {
+      "seam_id": "B02.long_1_east_end4.987",
+      "max_distance_to_steel_boundary_m": 0.0
+    },
+    {
+      "seam_id": "B02.long_2_west_side-1",
+      "max_distance_to_steel_boundary_m": 0.0
+    },
+    {
+      "seam_id": "B02.long_2_west_side1",
+      "max_distance_to_steel_boundary_m": 0.0
+    },
+    {
+      "seam_id": "B02.long_2_west_end-4.987",
+      "max_distance_to_steel_boundary_m": 0.0
+    },
+    {
+      "seam_id": "B02.long_2_west_end-1.057",
+      "max_distance_to_steel_boundary_m": 0.0
+    },
+    {
+      "seam_id": "B02.long_2_east_side-1",
+      "max_distance_to_steel_boundary_m": 0.0
+    },
+    {
+      "seam_id": "B02.long_2_east_side1",
+      "max_distance_to_steel_boundary_m": 0.0
+    },
+    {
+      "seam_id": "B02.long_2_east_end1.057",
+      "max_distance_to_steel_boundary_m": 0.0
+    },
+    {
+      "seam_id": "B02.long_2_east_end4.987",
+      "max_distance_to_steel_boundary_m": 0.0
+    },
+    {
+      "seam_id": "B02.long_3_west_side-1",
+      "max_distance_to_steel_boundary_m": 0.0
+    },
+    {
+      "seam_id": "B02.long_3_west_side1",
+      "max_distance_to_steel_boundary_m": 0.0
+    },
+    {
+      "seam_id": "B02.long_3_west_end-4.987",
+      "max_distance_to_steel_boundary_m": 0.0
+    },
+    {
+      "seam_id": "B02.long_3_west_end-1.057",
+      "max_distance_to_steel_boundary_m": 0.0
+    },
+    {
+      "seam_id": "B02.long_3_east_side-1",
+      "max_distance_to_steel_boundary_m": 0.0
+    },
+    {
+      "seam_id": "B02.long_3_east_side1",
+      "max_distance_to_steel_boundary_m": 0.0
+    },
+    {
+      "seam_id": "B02.long_3_east_end1.057",
+      "max_distance_to_steel_boundary_m": 0.0
+    },
+    {
+      "seam_id": "B02.long_3_east_end4.987",
+      "max_distance_to_steel_boundary_m": 0.0
+    },
+    {
+      "seam_id": "B02.long_4_west_side-1",
+      "max_distance_to_steel_boundary_m": 0.0
+    },
+    {
+      "seam_id": "B02.long_4_west_side1",
+      "max_distance_to_steel_boundary_m": 0.0
+    },
+    {
+      "seam_id": "B02.long_4_west_end-4.987",
+      "max_distance_to_steel_boundary_m": 0.0
+    },
+    {
+      "seam_id": "B02.long_4_west_end-1.057",
+      "max_distance_to_steel_boundary_m": 0.0
+    },
+    {
+      "seam_id": "B02.long_4_east_side-1",
+      "max_distance_to_steel_boundary_m": 0.0
+    },
+    {
+      "seam_id": "B02.long_4_east_side1",
+      "max_distance_to_steel_boundary_m": 0.0
+    },
+    {
+      "seam_id": "B02.long_4_east_end1.057",
+      "max_distance_to_steel_boundary_m": 0.0
+    },
+    {
+      "seam_id": "B02.long_4_east_end4.987",
+      "max_distance_to_steel_boundary_m": 0.0
+    },
+    {
+      "seam_id": "B02.long_5_west_side-1",
+      "max_distance_to_steel_boundary_m": 0.0
+    },
+    {
+      "seam_id": "B02.long_5_west_side1",
+      "max_distance_to_steel_boundary_m": 0.0
+    },
+    {
+      "seam_id": "B02.long_5_west_end-4.987",
+      "max_distance_to_steel_boundary_m": 0.0
+    },
+    {
+      "seam_id": "B02.long_5_west_end-1.057",
+      "max_distance_to_steel_boundary_m": 0.0
+    },
+    {
+      "seam_id": "B02.long_5_east_side-1",
+      "max_distance_to_steel_boundary_m": 0.0
+    },
+    {
+      "seam_id": "B02.long_5_east_side1",
+      "max_distance_to_steel_boundary_m": 0.0
+    },
+    {
+      "seam_id": "B02.long_5_east_end1.057",
+      "max_distance_to_steel_boundary_m": 0.0
+    },
+    {
+      "seam_id": "B02.long_5_east_end4.987",
+      "max_distance_to_steel_boundary_m": 0.0
+    },
+    {
+      "seam_id": "B02.trans_0_0_side-1",
+      "max_distance_to_steel_boundary_m": 0.0
+    },
+    {
+      "seam_id": "B02.trans_0_0_side1",
+      "max_distance_to_steel_boundary_m": 0.0
+    },
+    {
+      "seam_id": "B02.trans_0_1_side-1",
+      "max_distance_to_steel_boundary_m": 0.0
+    },
+    {
+      "seam_id": "B02.trans_0_1_side1",
+      "max_distance_to_steel_boundary_m": 0.0
+    },
+    {
+      "seam_id": "B02.intersection_0_1",
+      "max_distance_to_steel_boundary_m": 0.0009999999999998899
+    },
+    {
+      "seam_id": "B02.trans_0_2_side-1",
+      "max_distance_to_steel_boundary_m": 0.0
+    },
+    {
+      "seam_id": "B02.trans_0_2_side1",
+      "max_distance_to_steel_boundary_m": 0.0
+    },
+    {
+      "seam_id": "B02.trans_0_3_side-1",
+      "max_distance_to_steel_boundary_m": 0.0
+    },
+    {
+      "seam_id": "B02.trans_0_3_side1",
+      "max_distance_to_steel_boundary_m": 0.0
+    },
+    {
+      "seam_id": "B02.intersection_0_3",
+      "max_distance_to_steel_boundary_m": 0.0009999999999998899
+    },
+    {
+      "seam_id": "B02.trans_1_0_side-1",
+      "max_distance_to_steel_boundary_m": 0.0
+    },
+    {
+      "seam_id": "B02.trans_1_0_side1",
+      "max_distance_to_steel_boundary_m": 0.0
+    },
+    {
+      "seam_id": "B02.trans_1_1_side-1",
+      "max_distance_to_steel_boundary_m": 0.0
+    },
+    {
+      "seam_id": "B02.trans_1_1_side1",
+      "max_distance_to_steel_boundary_m": 0.0
+    },
+    {
+      "seam_id": "B02.intersection_1_1",
+      "max_distance_to_steel_boundary_m": 0.0
+    },
+    {
+      "seam_id": "B02.trans_1_2_side-1",
+      "max_distance_to_steel_boundary_m": 0.0
+    },
+    {
+      "seam_id": "B02.trans_1_2_side1",
+      "max_distance_to_steel_boundary_m": 0.0
+    },
+    {
+      "seam_id": "B02.trans_1_3_side-1",
+      "max_distance_to_steel_boundary_m": 0.0
+    },
+    {
+      "seam_id": "B02.trans_1_3_side1",
+      "max_distance_to_steel_boundary_m": 0.0
+    },
+    {
+      "seam_id": "B02.intersection_1_3",
+      "max_distance_to_steel_boundary_m": 0.0
+    },
+    {
+      "seam_id": "B02.trans_2_0_side-1",
+      "max_distance_to_steel_boundary_m": 0.0
+    },
+    {
+      "seam_id": "B02.trans_2_0_side1",
+      "max_distance_to_steel_boundary_m": 0.0
+    },
+    {
+      "seam_id": "B02.trans_2_1_side-1",
+      "max_distance_to_steel_boundary_m": 0.0
+    },
+    {
+      "seam_id": "B02.trans_2_1_side1",
+      "max_distance_to_steel_boundary_m": 0.0
+    },
+    {
+      "seam_id": "B02.intersection_2_1",
+      "max_distance_to_steel_boundary_m": 0.0009999999999998899
+    },
+    {
+      "seam_id": "B02.trans_2_2_side-1",
+      "max_distance_to_steel_boundary_m": 0.0
+    },
+    {
+      "seam_id": "B02.trans_2_2_side1",
+      "max_distance_to_steel_boundary_m": 0.0
+    },
+    {
+      "seam_id": "B02.trans_2_3_side-1",
+      "max_distance_to_steel_boundary_m": 0.0
+    },
+    {
+      "seam_id": "B02.trans_2_3_side1",
+      "max_distance_to_steel_boundary_m": 0.0
+    },
+    {
+      "seam_id": "B02.intersection_2_3",
+      "max_distance_to_steel_boundary_m": 0.0009999999999998899
+    },
+    {
+      "seam_id": "B02.trans_3_0_side-1",
+      "max_distance_to_steel_boundary_m": 0.0
+    },
+    {
+      "seam_id": "B02.trans_3_0_side1",
+      "max_distance_to_steel_boundary_m": 0.0
+    },
+    {
+      "seam_id": "B02.trans_3_1_side-1",
+      "max_distance_to_steel_boundary_m": 0.0
+    },
+    {
+      "seam_id": "B02.trans_3_1_side1",
+      "max_distance_to_steel_boundary_m": 0.0
+    },
+    {
+      "seam_id": "B02.intersection_3_1",
+      "max_distance_to_steel_boundary_m": 0.0009999999999998899
+    },
+    {
+      "seam_id": "B02.trans_3_2_side-1",
+      "max_distance_to_steel_boundary_m": 0.0
+    },
+    {
+      "seam_id": "B02.trans_3_2_side1",
+      "max_distance_to_steel_boundary_m": 0.0
+    },
+    {
+      "seam_id": "B02.trans_3_3_side-1",
+      "max_distance_to_steel_boundary_m": 0.0
+    },
+    {
+      "seam_id": "B02.trans_3_3_side1",
+      "max_distance_to_steel_boundary_m": 0.0
+    },
+    {
+      "seam_id": "B02.intersection_3_3",
+      "max_distance_to_steel_boundary_m": 0.0009999999999998899
+    },
+    {
+      "seam_id": "B02.trans_4_0_side-1",
+      "max_distance_to_steel_boundary_m": 0.0
+    },
+    {
+      "seam_id": "B02.trans_4_0_side1",
+      "max_distance_to_steel_boundary_m": 0.0
+    },
+    {
+      "seam_id": "B02.trans_4_1_side-1",
+      "max_distance_to_steel_boundary_m": 0.0
+    },
+    {
+      "seam_id": "B02.trans_4_1_side1",
+      "max_distance_to_steel_boundary_m": 0.0
+    },
+    {
+      "seam_id": "B02.intersection_4_1",
+      "max_distance_to_steel_boundary_m": 0.0
+    },
+    {
+      "seam_id": "B02.trans_4_2_side-1",
+      "max_distance_to_steel_boundary_m": 0.0
+    },
+    {
+      "seam_id": "B02.trans_4_2_side1",
+      "max_distance_to_steel_boundary_m": 0.0
+    },
+    {
+      "seam_id": "B02.trans_4_3_side-1",
+      "max_distance_to_steel_boundary_m": 0.0
+    },
+    {
+      "seam_id": "B02.trans_4_3_side1",
+      "max_distance_to_steel_boundary_m": 0.0
+    },
+    {
+      "seam_id": "B02.intersection_4_3",
+      "max_distance_to_steel_boundary_m": 0.0
+    },
+    {
+      "seam_id": "B02.trans_5_0_side-1",
+      "max_distance_to_steel_boundary_m": 0.0
+    },
+    {
+      "seam_id": "B02.trans_5_0_side1",
+      "max_distance_to_steel_boundary_m": 0.0
+    },
+    {
+      "seam_id": "B02.trans_5_1_side-1",
+      "max_distance_to_steel_boundary_m": 0.0
+    },
+    {
+      "seam_id": "B02.trans_5_1_side1",
+      "max_distance_to_steel_boundary_m": 0.0
+    },
+    {
+      "seam_id": "B02.intersection_5_1",
+      "max_distance_to_steel_boundary_m": 0.0009999999999994458
+    },
+    {
+      "seam_id": "B02.trans_5_2_side-1",
+      "max_distance_to_steel_boundary_m": 0.0
+    },
+    {
+      "seam_id": "B02.trans_5_2_side1",
+      "max_distance_to_steel_boundary_m": 0.0
+    },
+    {
+      "seam_id": "B02.trans_5_3_side-1",
+      "max_distance_to_steel_boundary_m": 0.0
+    },
+    {
+      "seam_id": "B02.trans_5_3_side1",
+      "max_distance_to_steel_boundary_m": 0.0
+    },
+    {
+      "seam_id": "B02.intersection_5_3",
+      "max_distance_to_steel_boundary_m": 0.0009999999999994458
+    },
+    {
+      "seam_id": "B03.long_0_west_side-1",
+      "max_distance_to_steel_boundary_m": 0.0
+    },
+    {
+      "seam_id": "B03.long_0_west_side1",
+      "max_distance_to_steel_boundary_m": 0.0
+    },
+    {
+      "seam_id": "B03.long_0_west_end-4.987",
+      "max_distance_to_steel_boundary_m": 0.0
+    },
+    {
+      "seam_id": "B03.long_0_west_end-1.057",
+      "max_distance_to_steel_boundary_m": 0.0
+    },
+    {
+      "seam_id": "B03.long_0_east_side-1",
+      "max_distance_to_steel_boundary_m": 0.0
+    },
+    {
+      "seam_id": "B03.long_0_east_side1",
+      "max_distance_to_steel_boundary_m": 0.0
+    },
+    {
+      "seam_id": "B03.long_0_east_end1.057",
+      "max_distance_to_steel_boundary_m": 0.0
+    },
+    {
+      "seam_id": "B03.long_0_east_end4.987",
+      "max_distance_to_steel_boundary_m": 0.0
+    },
+    {
+      "seam_id": "B03.long_1_west_side-1",
+      "max_distance_to_steel_boundary_m": 0.0
+    },
+    {
+      "seam_id": "B03.long_1_west_side1",
+      "max_distance_to_steel_boundary_m": 0.0
+    },
+    {
+      "seam_id": "B03.long_1_west_end-4.987",
+      "max_distance_to_steel_boundary_m": 0.0
+    },
+    {
+      "seam_id": "B03.long_1_west_end-1.057",
+      "max_distance_to_steel_boundary_m": 0.0
+    },
+    {
+      "seam_id": "B03.long_1_east_side-1",
+      "max_distance_to_steel_boundary_m": 0.0
+    },
+    {
+      "seam_id": "B03.long_1_east_side1",
+      "max_distance_to_steel_boundary_m": 0.0
+    },
+    {
+      "seam_id": "B03.long_1_east_end1.057",
+      "max_distance_to_steel_boundary_m": 0.0
+    },
+    {
+      "seam_id": "B03.long_1_east_end4.987",
+      "max_distance_to_steel_boundary_m": 0.0
+    },
+    {
+      "seam_id": "B03.long_2_west_side-1",
+      "max_distance_to_steel_boundary_m": 0.0
+    },
+    {
+      "seam_id": "B03.long_2_west_side1",
+      "max_distance_to_steel_boundary_m": 0.0
+    },
+    {
+      "seam_id": "B03.long_2_west_end-4.987",
+      "max_distance_to_steel_boundary_m": 0.0
+    },
+    {
+      "seam_id": "B03.long_2_west_end-1.057",
+      "max_distance_to_steel_boundary_m": 0.0
+    },
+    {
+      "seam_id": "B03.long_2_east_side-1",
+      "max_distance_to_steel_boundary_m": 0.0
+    },
+    {
+      "seam_id": "B03.long_2_east_side1",
+      "max_distance_to_steel_boundary_m": 0.0
+    },
+    {
+      "seam_id": "B03.long_2_east_end1.057",
+      "max_distance_to_steel_boundary_m": 0.0
+    },
+    {
+      "seam_id": "B03.long_2_east_end4.987",
+      "max_distance_to_steel_boundary_m": 0.0
+    },
+    {
+      "seam_id": "B03.long_3_west_side-1",
+      "max_distance_to_steel_boundary_m": 0.0
+    },
+    {
+      "seam_id": "B03.long_3_west_side1",
+      "max_distance_to_steel_boundary_m": 0.0
+    },
+    {
+      "seam_id": "B03.long_3_west_end-4.987",
+      "max_distance_to_steel_boundary_m": 0.0
+    },
+    {
+      "seam_id": "B03.long_3_west_end-1.057",
+      "max_distance_to_steel_boundary_m": 0.0
+    },
+    {
+      "seam_id": "B03.long_3_east_side-1",
+      "max_distance_to_steel_boundary_m": 0.0
+    },
+    {
+      "seam_id": "B03.long_3_east_side1",
+      "max_distance_to_steel_boundary_m": 0.0
+    },
+    {
+      "seam_id": "B03.long_3_east_end1.057",
+      "max_distance_to_steel_boundary_m": 0.0
+    },
+    {
+      "seam_id": "B03.long_3_east_end4.987",
+      "max_distance_to_steel_boundary_m": 0.0
+    },
+    {
+      "seam_id": "B03.long_4_west_side-1",
+      "max_distance_to_steel_boundary_m": 0.0
+    },
+    {
+      "seam_id": "B03.long_4_west_side1",
+      "max_distance_to_steel_boundary_m": 0.0
+    },
+    {
+      "seam_id": "B03.long_4_west_end-4.987",
+      "max_distance_to_steel_boundary_m": 0.0
+    },
+    {
+      "seam_id": "B03.long_4_west_end-1.057",
+      "max_distance_to_steel_boundary_m": 0.0
+    },
+    {
+      "seam_id": "B03.long_4_east_side-1",
+      "max_distance_to_steel_boundary_m": 0.0
+    },
+    {
+      "seam_id": "B03.long_4_east_side1",
+      "max_distance_to_steel_boundary_m": 0.0
+    },
+    {
+      "seam_id": "B03.long_4_east_end1.057",
+      "max_distance_to_steel_boundary_m": 0.0
+    },
+    {
+      "seam_id": "B03.long_4_east_end4.987",
+      "max_distance_to_steel_boundary_m": 0.0
+    },
+    {
+      "seam_id": "B03.long_5_west_side-1",
+      "max_distance_to_steel_boundary_m": 0.0
+    },
+    {
+      "seam_id": "B03.long_5_west_side1",
+      "max_distance_to_steel_boundary_m": 0.0
+    },
+    {
+      "seam_id": "B03.long_5_west_end-4.987",
+      "max_distance_to_steel_boundary_m": 0.0
+    },
+    {
+      "seam_id": "B03.long_5_west_end-1.057",
+      "max_distance_to_steel_boundary_m": 0.0
+    },
+    {
+      "seam_id": "B03.long_5_east_side-1",
+      "max_distance_to_steel_boundary_m": 0.0
+    },
+    {
+      "seam_id": "B03.long_5_east_side1",
+      "max_distance_to_steel_boundary_m": 0.0
+    },
+    {
+      "seam_id": "B03.long_5_east_end1.057",
+      "max_distance_to_steel_boundary_m": 0.0
+    },
+    {
+      "seam_id": "B03.long_5_east_end4.987",
+      "max_distance_to_steel_boundary_m": 0.0
+    },
+    {
+      "seam_id": "B03.trans_0_0_side-1",
+      "max_distance_to_steel_boundary_m": 0.0
+    },
+    {
+      "seam_id": "B03.trans_0_0_side1",
+      "max_distance_to_steel_boundary_m": 0.0
+    },
+    {
+      "seam_id": "B03.trans_0_1_side-1",
+      "max_distance_to_steel_boundary_m": 0.0
+    },
+    {
+      "seam_id": "B03.trans_0_1_side1",
+      "max_distance_to_steel_boundary_m": 0.0
+    },
+    {
+      "seam_id": "B03.intersection_0_1",
+      "max_distance_to_steel_boundary_m": 0.0009999999999998899
+    },
+    {
+      "seam_id": "B03.trans_0_2_side-1",
+      "max_distance_to_steel_boundary_m": 0.0
+    },
+    {
+      "seam_id": "B03.trans_0_2_side1",
+      "max_distance_to_steel_boundary_m": 0.0
+    },
+    {
+      "seam_id": "B03.trans_0_3_side-1",
+      "max_distance_to_steel_boundary_m": 0.0
+    },
+    {
+      "seam_id": "B03.trans_0_3_side1",
+      "max_distance_to_steel_boundary_m": 0.0
+    },
+    {
+      "seam_id": "B03.intersection_0_3",
+      "max_distance_to_steel_boundary_m": 0.0009999999999998899
+    },
+    {
+      "seam_id": "B03.trans_1_0_side-1",
+      "max_distance_to_steel_boundary_m": 0.0
+    },
+    {
+      "seam_id": "B03.trans_1_0_side1",
+      "max_distance_to_steel_boundary_m": 0.0
+    },
+    {
+      "seam_id": "B03.trans_1_1_side-1",
+      "max_distance_to_steel_boundary_m": 0.0
+    },
+    {
+      "seam_id": "B03.trans_1_1_side1",
+      "max_distance_to_steel_boundary_m": 0.0
+    },
+    {
+      "seam_id": "B03.intersection_1_1",
+      "max_distance_to_steel_boundary_m": 0.0
+    },
+    {
+      "seam_id": "B03.trans_1_2_side-1",
+      "max_distance_to_steel_boundary_m": 0.0
+    },
+    {
+      "seam_id": "B03.trans_1_2_side1",
+      "max_distance_to_steel_boundary_m": 0.0
+    },
+    {
+      "seam_id": "B03.trans_1_3_side-1",
+      "max_distance_to_steel_boundary_m": 0.0
+    },
+    {
+      "seam_id": "B03.trans_1_3_side1",
+      "max_distance_to_steel_boundary_m": 0.0
+    },
+    {
+      "seam_id": "B03.intersection_1_3",
+      "max_distance_to_steel_boundary_m": 0.0
+    },
+    {
+      "seam_id": "B03.trans_2_0_side-1",
+      "max_distance_to_steel_boundary_m": 0.0
+    },
+    {
+      "seam_id": "B03.trans_2_0_side1",
+      "max_distance_to_steel_boundary_m": 0.0
+    },
+    {
+      "seam_id": "B03.trans_2_1_side-1",
+      "max_distance_to_steel_boundary_m": 0.0
+    },
+    {
+      "seam_id": "B03.trans_2_1_side1",
+      "max_distance_to_steel_boundary_m": 0.0
+    },
+    {
+      "seam_id": "B03.intersection_2_1",
+      "max_distance_to_steel_boundary_m": 0.0009999999999998899
+    },
+    {
+      "seam_id": "B03.trans_2_2_side-1",
+      "max_distance_to_steel_boundary_m": 0.0
+    },
+    {
+      "seam_id": "B03.trans_2_2_side1",
+      "max_distance_to_steel_boundary_m": 0.0
+    },
+    {
+      "seam_id": "B03.trans_2_3_side-1",
+      "max_distance_to_steel_boundary_m": 0.0
+    },
+    {
+      "seam_id": "B03.trans_2_3_side1",
+      "max_distance_to_steel_boundary_m": 0.0
+    },
+    {
+      "seam_id": "B03.intersection_2_3",
+      "max_distance_to_steel_boundary_m": 0.0009999999999998899
+    },
+    {
+      "seam_id": "B03.trans_3_0_side-1",
+      "max_distance_to_steel_boundary_m": 0.0
+    },
+    {
+      "seam_id": "B03.trans_3_0_side1",
+      "max_distance_to_steel_boundary_m": 0.0
+    },
+    {
+      "seam_id": "B03.trans_3_1_side-1",
+      "max_distance_to_steel_boundary_m": 0.0
+    },
+    {
+      "seam_id": "B03.trans_3_1_side1",
+      "max_distance_to_steel_boundary_m": 0.0
+    },
+    {
+      "seam_id": "B03.intersection_3_1",
+      "max_distance_to_steel_boundary_m": 0.0009999999999998899
+    },
+    {
+      "seam_id": "B03.trans_3_2_side-1",
+      "max_distance_to_steel_boundary_m": 0.0
+    },
+    {
+      "seam_id": "B03.trans_3_2_side1",
+      "max_distance_to_steel_boundary_m": 0.0
+    },
+    {
+      "seam_id": "B03.trans_3_3_side-1",
+      "max_distance_to_steel_boundary_m": 0.0
+    },
+    {
+      "seam_id": "B03.trans_3_3_side1",
+      "max_distance_to_steel_boundary_m": 0.0
+    },
+    {
+      "seam_id": "B03.intersection_3_3",
+      "max_distance_to_steel_boundary_m": 0.0009999999999998899
+    },
+    {
+      "seam_id": "B03.trans_4_0_side-1",
+      "max_distance_to_steel_boundary_m": 0.0
+    },
+    {
+      "seam_id": "B03.trans_4_0_side1",
+      "max_distance_to_steel_boundary_m": 0.0
+    },
+    {
+      "seam_id": "B03.trans_4_1_side-1",
+      "max_distance_to_steel_boundary_m": 0.0
+    },
+    {
+      "seam_id": "B03.trans_4_1_side1",
+      "max_distance_to_steel_boundary_m": 0.0
+    },
+    {
+      "seam_id": "B03.intersection_4_1",
+      "max_distance_to_steel_boundary_m": 0.0
+    },
+    {
+      "seam_id": "B03.trans_4_2_side-1",
+      "max_distance_to_steel_boundary_m": 0.0
+    },
+    {
+      "seam_id": "B03.trans_4_2_side1",
+      "max_distance_to_steel_boundary_m": 0.0
+    },
+    {
+      "seam_id": "B03.trans_4_3_side-1",
+      "max_distance_to_steel_boundary_m": 0.0
+    },
+    {
+      "seam_id": "B03.trans_4_3_side1",
+      "max_distance_to_steel_boundary_m": 0.0
+    },
+    {
+      "seam_id": "B03.intersection_4_3",
+      "max_distance_to_steel_boundary_m": 0.0
+    },
+    {
+      "seam_id": "B03.trans_5_0_side-1",
+      "max_distance_to_steel_boundary_m": 0.0
+    },
+    {
+      "seam_id": "B03.trans_5_0_side1",
+      "max_distance_to_steel_boundary_m": 0.0
+    },
+    {
+      "seam_id": "B03.trans_5_1_side-1",
+      "max_distance_to_steel_boundary_m": 0.0
+    },
+    {
+      "seam_id": "B03.trans_5_1_side1",
+      "max_distance_to_steel_boundary_m": 0.0
+    },
+    {
+      "seam_id": "B03.intersection_5_1",
+      "max_distance_to_steel_boundary_m": 0.0009999999999994458
+    },
+    {
+      "seam_id": "B03.trans_5_2_side-1",
+      "max_distance_to_steel_boundary_m": 0.0
+    },
+    {
+      "seam_id": "B03.trans_5_2_side1",
+      "max_distance_to_steel_boundary_m": 0.0
+    },
+    {
+      "seam_id": "B03.trans_5_3_side-1",
+      "max_distance_to_steel_boundary_m": 0.0
+    },
+    {
+      "seam_id": "B03.trans_5_3_side1",
+      "max_distance_to_steel_boundary_m": 0.0
+    },
+    {
+      "seam_id": "B03.intersection_5_3",
+      "max_distance_to_steel_boundary_m": 0.0009999999999994458
+    },
+    {
+      "seam_id": "B04.parallel_0_west_side-1",
+      "max_distance_to_steel_boundary_m": 0.0
+    },
+    {
+      "seam_id": "B04.parallel_0_west_side1",
+      "max_distance_to_steel_boundary_m": 0.0
+    },
+    {
+      "seam_id": "B04.parallel_0_west_end-4.96",
+      "max_distance_to_steel_boundary_m": 0.0
+    },
+    {
+      "seam_id": "B04.parallel_0_west_end-1.05",
+      "max_distance_to_steel_boundary_m": 0.0
+    },
+    {
+      "seam_id": "B04.parallel_0_east_side-1",
+      "max_distance_to_steel_boundary_m": 0.0
+    },
+    {
+      "seam_id": "B04.parallel_0_east_side1",
+      "max_distance_to_steel_boundary_m": 0.0
+    },
+    {
+      "seam_id": "B04.parallel_0_east_end1.05",
+      "max_distance_to_steel_boundary_m": 0.0
+    },
+    {
+      "seam_id": "B04.parallel_0_east_end4.96",
+      "max_distance_to_steel_boundary_m": 0.0
+    },
+    {
+      "seam_id": "B04.parallel_1_west_side-1",
+      "max_distance_to_steel_boundary_m": 0.0
+    },
+    {
+      "seam_id": "B04.parallel_1_west_side1",
+      "max_distance_to_steel_boundary_m": 0.0
+    },
+    {
+      "seam_id": "B04.parallel_1_west_end-4.96",
+      "max_distance_to_steel_boundary_m": 0.0
+    },
+    {
+      "seam_id": "B04.parallel_1_west_end-1.05",
+      "max_distance_to_steel_boundary_m": 0.0
+    },
+    {
+      "seam_id": "B04.parallel_1_east_side-1",
+      "max_distance_to_steel_boundary_m": 0.0
+    },
+    {
+      "seam_id": "B04.parallel_1_east_side1",
+      "max_distance_to_steel_boundary_m": 0.0
+    },
+    {
+      "seam_id": "B04.parallel_1_east_end1.05",
+      "max_distance_to_steel_boundary_m": 0.0
+    },
+    {
+      "seam_id": "B04.parallel_1_east_end4.96",
+      "max_distance_to_steel_boundary_m": 0.0
+    },
+    {
+      "seam_id": "B04.parallel_2_west_side-1",
+      "max_distance_to_steel_boundary_m": 0.0
+    },
+    {
+      "seam_id": "B04.parallel_2_west_side1",
+      "max_distance_to_steel_boundary_m": 0.0
+    },
+    {
+      "seam_id": "B04.parallel_2_west_end-4.96",
+      "max_distance_to_steel_boundary_m": 0.0
+    },
+    {
+      "seam_id": "B04.parallel_2_west_end-1.05",
+      "max_distance_to_steel_boundary_m": 0.0
+    },
+    {
+      "seam_id": "B04.parallel_2_east_side-1",
+      "max_distance_to_steel_boundary_m": 0.0
+    },
+    {
+      "seam_id": "B04.parallel_2_east_side1",
+      "max_distance_to_steel_boundary_m": 0.0
+    },
+    {
+      "seam_id": "B04.parallel_2_east_end1.05",
+      "max_distance_to_steel_boundary_m": 0.0
+    },
+    {
+      "seam_id": "B04.parallel_2_east_end4.96",
+      "max_distance_to_steel_boundary_m": 0.0
+    },
+    {
+      "seam_id": "B04.parallel_3_west_side-1",
+      "max_distance_to_steel_boundary_m": 0.0
+    },
+    {
+      "seam_id": "B04.parallel_3_west_side1",
+      "max_distance_to_steel_boundary_m": 0.0
+    },
+    {
+      "seam_id": "B04.parallel_3_west_end-4.96",
+      "max_distance_to_steel_boundary_m": 0.0
+    },
+    {
+      "seam_id": "B04.parallel_3_west_end-1.05",
+      "max_distance_to_steel_boundary_m": 0.0
+    },
+    {
+      "seam_id": "B04.parallel_3_east_side-1",
+      "max_distance_to_steel_boundary_m": 0.0
+    },
+    {
+      "seam_id": "B04.parallel_3_east_side1",
+      "max_distance_to_steel_boundary_m": 0.0
+    },
+    {
+      "seam_id": "B04.parallel_3_east_end1.05",
+      "max_distance_to_steel_boundary_m": 0.0
+    },
+    {
+      "seam_id": "B04.parallel_3_east_end4.96",
+      "max_distance_to_steel_boundary_m": 0.0
+    }
+  ],
+  "heights": [
+    {
+      "workpiece": "A01",
+      "seam": "A01.root_front",
+      "table_height_m": 0.238,
+      "actual_seam_height_m": [
+        0.25,
+        0.25
+      ]
+    },
+    {
+      "workpiece": "A02",
+      "seam": "A02.butt_center",
+      "table_height_m": 0.5295000000000001,
+      "actual_seam_height_m": [
+        0.55,
+        0.55
+      ]
+    },
+    {
+      "workpiece": "A03",
+      "seam": "A03.root_front",
+      "table_height_m": 1.138,
+      "actual_seam_height_m": [
+        1.15,
+        1.15
+      ]
+    },
+    {
+      "workpiece": "A04",
+      "seam": "A04.vertical_up",
+      "table_height_m": 0.338,
+      "actual_seam_height_m": [
+        0.378,
+        0.718
+      ]
+    },
+    {
+      "workpiece": "A05",
+      "seam": "A05.butt_center",
+      "table_height_m": 0.8295,
+      "actual_seam_height_m": [
+        0.85,
+        0.85
+      ]
+    },
+    {
+      "workpiece": "A06",
+      "seam": "A06.inclined_root",
+      "table_height_m": 0.538,
+      "actual_seam_height_m": [
+        0.6132125976293542,
+        0.8979136086254476
+      ]
+    },
+    {
+      "workpiece": "A07",
+      "seam": "A07.open_S_root",
+      "table_height_m": 0.538,
+      "actual_seam_height_m": [
+        0.55,
+        0.55
+      ]
+    },
+    {
+      "workpiece": "A08",
+      "seam": "A08.open_back_root_left",
+      "table_height_m": 0.538,
+      "actual_seam_height_m": [
+        0.5480000000000002,
+        0.5480000000000002
+      ]
+    },
+    {
+      "workpiece": "A08",
+      "seam": "A08.open_back_root_right",
+      "table_height_m": 0.538,
+      "actual_seam_height_m": [
+        0.5480000000000002,
+        0.5480000000000002
+      ]
+    },
+    {
+      "workpiece": "A08",
+      "seam": "A08.gusset_foot",
+      "table_height_m": 0.538,
+      "actual_seam_height_m": [
+        0.5480000000000002,
+        0.5480000000000002
+      ]
+    },
+    {
+      "workpiece": "A08",
+      "seam": "A08.gusset_wall_-1",
+      "table_height_m": 0.538,
+      "actual_seam_height_m": [
+        0.5680000000000002,
+        0.7880000000000003
+      ]
+    },
+    {
+      "workpiece": "A08",
+      "seam": "A08.gusset_wall_1",
+      "table_height_m": 0.538,
+      "actual_seam_height_m": [
+        0.5680000000000002,
+        0.7880000000000003
+      ]
+    },
+    {
+      "workpiece": "A08",
+      "seam": "A08.open_vertical_corner",
+      "table_height_m": 0.538,
+      "actual_seam_height_m": [
+        0.5680000000000002,
+        0.8780000000000002
+      ]
+    },
+    {
+      "workpiece": "A09",
+      "seam": "A09.butt_center",
+      "table_height_m": 0.44532029784783717,
+      "actual_seam_height_m": [
+        0.5500000000000002,
+        0.5500000000000002
+      ]
+    },
+    {
+      "workpiece": "A10",
+      "seam": "A10.open_S_root",
+      "table_height_m": 0.238,
+      "actual_seam_height_m": [
+        0.25,
+        0.25
+      ]
+    },
+    {
+      "workpiece": "A11",
+      "seam": "A11.butt_center",
+      "table_height_m": 0.5286387840678323,
+      "actual_seam_height_m": [
+        0.7000000000000001,
+        0.7000000000000001
+      ]
+    },
+    {
+      "workpiece": "A12",
+      "seam": "A12.open_S_root",
+      "table_height_m": 0.388,
+      "actual_seam_height_m": [
+        0.4,
+        0.4
+      ]
+    },
+    {
+      "workpiece": "A13",
+      "seam": "A13.root_front",
+      "table_height_m": 0.388,
+      "actual_seam_height_m": [
+        0.4,
+        0.4
+      ]
+    },
+    {
+      "workpiece": "A14",
+      "seam": "A14.open_S_root",
+      "table_height_m": 0.688,
+      "actual_seam_height_m": [
+        0.7,
+        0.7
+      ]
+    },
+    {
+      "workpiece": "A15",
+      "seam": "A15.root_front",
+      "table_height_m": 0.688,
+      "actual_seam_height_m": [
+        0.7,
+        0.7
+      ]
+    },
+    {
+      "workpiece": "A16",
+      "seam": "A16.open_S_root",
+      "table_height_m": 0.838,
+      "actual_seam_height_m": [
+        0.85,
+        0.85
+      ]
+    },
+    {
+      "workpiece": "A17",
+      "seam": "A17.butt_center",
+      "table_height_m": 0.621999693627681,
+      "actual_seam_height_m": [
+        0.85,
+        0.85
+      ]
+    },
+    {
+      "workpiece": "A18",
+      "seam": "A18.open_S_root",
+      "table_height_m": 0.988,
+      "actual_seam_height_m": [
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "workpiece": "A19",
+      "seam": "A19.root_front",
+      "table_height_m": 0.988,
+      "actual_seam_height_m": [
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "workpiece": "A20",
+      "seam": "A20.open_S_root",
+      "table_height_m": 1.138,
+      "actual_seam_height_m": [
+        1.15,
+        1.15
+      ]
+    },
+    {
+      "workpiece": "A21",
+      "seam": "A21.root_front",
+      "table_height_m": 0.238,
+      "actual_seam_height_m": [
+        0.25,
+        0.25
+      ]
+    },
+    {
+      "workpiece": "A22",
+      "seam": "A22.root_front",
+      "table_height_m": 0.538,
+      "actual_seam_height_m": [
+        0.55,
+        0.55
+      ]
+    },
+    {
+      "workpiece": "A23",
+      "seam": "A23.root_front",
+      "table_height_m": 0.838,
+      "actual_seam_height_m": [
+        0.85,
+        0.85
+      ]
+    },
+    {
+      "workpiece": "A24",
+      "seam": "A24.butt_center",
+      "table_height_m": 0.7292628869403572,
+      "actual_seam_height_m": [
+        1.0000000000000002,
+        1.0000000000000002
+      ]
+    },
+    {
+      "workpiece": "B01",
+      "seam": "B01.parallel_0_west_side-1",
+      "table_height_m": 0.0,
+      "actual_seam_height_m": [
+        0.012,
+        0.012
+      ]
+    },
+    {
+      "workpiece": "B01",
+      "seam": "B01.parallel_0_west_side1",
+      "table_height_m": 0.0,
+      "actual_seam_height_m": [
+        0.012,
+        0.012
+      ]
+    },
+    {
+      "workpiece": "B01",
+      "seam": "B01.parallel_0_west_end-5.96",
+      "table_height_m": 0.0,
+      "actual_seam_height_m": [
+        0.012,
+        0.012
+      ]
+    },
+    {
+      "workpiece": "B01",
+      "seam": "B01.parallel_0_west_end-1.05",
+      "table_height_m": 0.0,
+      "actual_seam_height_m": [
+        0.012,
+        0.012
+      ]
+    },
+    {
+      "workpiece": "B01",
+      "seam": "B01.parallel_0_east_side-1",
+      "table_height_m": 0.0,
+      "actual_seam_height_m": [
+        0.012,
+        0.012
+      ]
+    },
+    {
+      "workpiece": "B01",
+      "seam": "B01.parallel_0_east_side1",
+      "table_height_m": 0.0,
+      "actual_seam_height_m": [
+        0.012,
+        0.012
+      ]
+    },
+    {
+      "workpiece": "B01",
+      "seam": "B01.parallel_0_east_end1.05",
+      "table_height_m": 0.0,
+      "actual_seam_height_m": [
+        0.012,
+        0.012
+      ]
+    },
+    {
+      "workpiece": "B01",
+      "seam": "B01.parallel_0_east_end5.96",
+      "table_height_m": 0.0,
+      "actual_seam_height_m": [
+        0.012,
+        0.012
+      ]
+    },
+    {
+      "workpiece": "B01",
+      "seam": "B01.parallel_1_west_side-1",
+      "table_height_m": 0.0,
+      "actual_seam_height_m": [
+        0.012,
+        0.012
+      ]
+    },
+    {
+      "workpiece": "B01",
+      "seam": "B01.parallel_1_west_side1",
+      "table_height_m": 0.0,
+      "actual_seam_height_m": [
+        0.012,
+        0.012
+      ]
+    },
+    {
+      "workpiece": "B01",
+      "seam": "B01.parallel_1_west_end-5.96",
+      "table_height_m": 0.0,
+      "actual_seam_height_m": [
+        0.012,
+        0.012
+      ]
+    },
+    {
+      "workpiece": "B01",
+      "seam": "B01.parallel_1_west_end-1.05",
+      "table_height_m": 0.0,
+      "actual_seam_height_m": [
+        0.012,
+        0.012
+      ]
+    },
+    {
+      "workpiece": "B01",
+      "seam": "B01.parallel_1_east_side-1",
+      "table_height_m": 0.0,
+      "actual_seam_height_m": [
+        0.012,
+        0.012
+      ]
+    },
+    {
+      "workpiece": "B01",
+      "seam": "B01.parallel_1_east_side1",
+      "table_height_m": 0.0,
+      "actual_seam_height_m": [
+        0.012,
+        0.012
+      ]
+    },
+    {
+      "workpiece": "B01",
+      "seam": "B01.parallel_1_east_end1.05",
+      "table_height_m": 0.0,
+      "actual_seam_height_m": [
+        0.012,
+        0.012
+      ]
+    },
+    {
+      "workpiece": "B01",
+      "seam": "B01.parallel_1_east_end5.96",
+      "table_height_m": 0.0,
+      "actual_seam_height_m": [
+        0.012,
+        0.012
+      ]
+    },
+    {
+      "workpiece": "B01",
+      "seam": "B01.parallel_2_west_side-1",
+      "table_height_m": 0.0,
+      "actual_seam_height_m": [
+        0.012,
+        0.012
+      ]
+    },
+    {
+      "workpiece": "B01",
+      "seam": "B01.parallel_2_west_side1",
+      "table_height_m": 0.0,
+      "actual_seam_height_m": [
+        0.012,
+        0.012
+      ]
+    },
+    {
+      "workpiece": "B01",
+      "seam": "B01.parallel_2_west_end-5.96",
+      "table_height_m": 0.0,
+      "actual_seam_height_m": [
+        0.012,
+        0.012
+      ]
+    },
+    {
+      "workpiece": "B01",
+      "seam": "B01.parallel_2_west_end-1.05",
+      "table_height_m": 0.0,
+      "actual_seam_height_m": [
+        0.012,
+        0.012
+      ]
+    },
+    {
+      "workpiece": "B01",
+      "seam": "B01.parallel_2_east_side-1",
+      "table_height_m": 0.0,
+      "actual_seam_height_m": [
+        0.012,
+        0.012
+      ]
+    },
+    {
+      "workpiece": "B01",
+      "seam": "B01.parallel_2_east_side1",
+      "table_height_m": 0.0,
+      "actual_seam_height_m": [
+        0.012,
+        0.012
+      ]
+    },
+    {
+      "workpiece": "B01",
+      "seam": "B01.parallel_2_east_end1.05",
+      "table_height_m": 0.0,
+      "actual_seam_height_m": [
+        0.012,
+        0.012
+      ]
+    },
+    {
+      "workpiece": "B01",
+      "seam": "B01.parallel_2_east_end5.96",
+      "table_height_m": 0.0,
+      "actual_seam_height_m": [
+        0.012,
+        0.012
+      ]
+    },
+    {
+      "workpiece": "B01",
+      "seam": "B01.parallel_3_west_side-1",
+      "table_height_m": 0.0,
+      "actual_seam_height_m": [
+        0.012,
+        0.012
+      ]
+    },
+    {
+      "workpiece": "B01",
+      "seam": "B01.parallel_3_west_side1",
+      "table_height_m": 0.0,
+      "actual_seam_height_m": [
+        0.012,
+        0.012
+      ]
+    },
+    {
+      "workpiece": "B01",
+      "seam": "B01.parallel_3_west_end-5.96",
+      "table_height_m": 0.0,
+      "actual_seam_height_m": [
+        0.012,
+        0.012
+      ]
+    },
+    {
+      "workpiece": "B01",
+      "seam": "B01.parallel_3_west_end-1.05",
+      "table_height_m": 0.0,
+      "actual_seam_height_m": [
+        0.012,
+        0.012
+      ]
+    },
+    {
+      "workpiece": "B01",
+      "seam": "B01.parallel_3_east_side-1",
+      "table_height_m": 0.0,
+      "actual_seam_height_m": [
+        0.012,
+        0.012
+      ]
+    },
+    {
+      "workpiece": "B01",
+      "seam": "B01.parallel_3_east_side1",
+      "table_height_m": 0.0,
+      "actual_seam_height_m": [
+        0.012,
+        0.012
+      ]
+    },
+    {
+      "workpiece": "B01",
+      "seam": "B01.parallel_3_east_end1.05",
+      "table_height_m": 0.0,
+      "actual_seam_height_m": [
+        0.012,
+        0.012
+      ]
+    },
+    {
+      "workpiece": "B01",
+      "seam": "B01.parallel_3_east_end5.96",
+      "table_height_m": 0.0,
+      "actual_seam_height_m": [
+        0.012,
+        0.012
+      ]
+    },
+    {
+      "workpiece": "B01",
+      "seam": "B01.parallel_4_west_side-1",
+      "table_height_m": 0.0,
+      "actual_seam_height_m": [
+        0.012,
+        0.012
+      ]
+    },
+    {
+      "workpiece": "B01",
+      "seam": "B01.parallel_4_west_side1",
+      "table_height_m": 0.0,
+      "actual_seam_height_m": [
+        0.012,
+        0.012
+      ]
+    },
+    {
+      "workpiece": "B01",
+      "seam": "B01.parallel_4_west_end-5.96",
+      "table_height_m": 0.0,
+      "actual_seam_height_m": [
+        0.012,
+        0.012
+      ]
+    },
+    {
+      "workpiece": "B01",
+      "seam": "B01.parallel_4_west_end-1.05",
+      "table_height_m": 0.0,
+      "actual_seam_height_m": [
+        0.012,
+        0.012
+      ]
+    },
+    {
+      "workpiece": "B01",
+      "seam": "B01.parallel_4_east_side-1",
+      "table_height_m": 0.0,
+      "actual_seam_height_m": [
+        0.012,
+        0.012
+      ]
+    },
+    {
+      "workpiece": "B01",
+      "seam": "B01.parallel_4_east_side1",
+      "table_height_m": 0.0,
+      "actual_seam_height_m": [
+        0.012,
+        0.012
+      ]
+    },
+    {
+      "workpiece": "B01",
+      "seam": "B01.parallel_4_east_end1.05",
+      "table_height_m": 0.0,
+      "actual_seam_height_m": [
+        0.012,
+        0.012
+      ]
+    },
+    {
+      "workpiece": "B01",
+      "seam": "B01.parallel_4_east_end5.96",
+      "table_height_m": 0.0,
+      "actual_seam_height_m": [
+        0.012,
+        0.012
+      ]
+    },
+    {
+      "workpiece": "B02",
+      "seam": "B02.long_0_west_side-1",
+      "table_height_m": 0.0,
+      "actual_seam_height_m": [
+        0.012,
+        0.012
+      ]
+    },
+    {
+      "workpiece": "B02",
+      "seam": "B02.long_0_west_side1",
+      "table_height_m": 0.0,
+      "actual_seam_height_m": [
+        0.012,
+        0.012
+      ]
+    },
+    {
+      "workpiece": "B02",
+      "seam": "B02.long_0_west_end-4.987",
+      "table_height_m": 0.0,
+      "actual_seam_height_m": [
+        0.012,
+        0.012
+      ]
+    },
+    {
+      "workpiece": "B02",
+      "seam": "B02.long_0_west_end-1.057",
+      "table_height_m": 0.0,
+      "actual_seam_height_m": [
+        0.012,
+        0.012
+      ]
+    },
+    {
+      "workpiece": "B02",
+      "seam": "B02.long_0_east_side-1",
+      "table_height_m": 0.0,
+      "actual_seam_height_m": [
+        0.012,
+        0.012
+      ]
+    },
+    {
+      "workpiece": "B02",
+      "seam": "B02.long_0_east_side1",
+      "table_height_m": 0.0,
+      "actual_seam_height_m": [
+        0.012,
+        0.012
+      ]
+    },
+    {
+      "workpiece": "B02",
+      "seam": "B02.long_0_east_end1.057",
+      "table_height_m": 0.0,
+      "actual_seam_height_m": [
+        0.012,
+        0.012
+      ]
+    },
+    {
+      "workpiece": "B02",
+      "seam": "B02.long_0_east_end4.987",
+      "table_height_m": 0.0,
+      "actual_seam_height_m": [
+        0.012,
+        0.012
+      ]
+    },
+    {
+      "workpiece": "B02",
+      "seam": "B02.long_1_west_side-1",
+      "table_height_m": 0.0,
+      "actual_seam_height_m": [
+        0.012,
+        0.012
+      ]
+    },
+    {
+      "workpiece": "B02",
+      "seam": "B02.long_1_west_side1",
+      "table_height_m": 0.0,
+      "actual_seam_height_m": [
+        0.012,
+        0.012
+      ]
+    },
+    {
+      "workpiece": "B02",
+      "seam": "B02.long_1_west_end-4.987",
+      "table_height_m": 0.0,
+      "actual_seam_height_m": [
+        0.012,
+        0.012
+      ]
+    },
+    {
+      "workpiece": "B02",
+      "seam": "B02.long_1_west_end-1.057",
+      "table_height_m": 0.0,
+      "actual_seam_height_m": [
+        0.012,
+        0.012
+      ]
+    },
+    {
+      "workpiece": "B02",
+      "seam": "B02.long_1_east_side-1",
+      "table_height_m": 0.0,
+      "actual_seam_height_m": [
+        0.012,
+        0.012
+      ]
+    },
+    {
+      "workpiece": "B02",
+      "seam": "B02.long_1_east_side1",
+      "table_height_m": 0.0,
+      "actual_seam_height_m": [
+        0.012,
+        0.012
+      ]
+    },
+    {
+      "workpiece": "B02",
+      "seam": "B02.long_1_east_end1.057",
+      "table_height_m": 0.0,
+      "actual_seam_height_m": [
+        0.012,
+        0.012
+      ]
+    },
+    {
+      "workpiece": "B02",
+      "seam": "B02.long_1_east_end4.987",
+      "table_height_m": 0.0,
+      "actual_seam_height_m": [
+        0.012,
+        0.012
+      ]
+    },
+    {
+      "workpiece": "B02",
+      "seam": "B02.long_2_west_side-1",
+      "table_height_m": 0.0,
+      "actual_seam_height_m": [
+        0.012,
+        0.012
+      ]
+    },
+    {
+      "workpiece": "B02",
+      "seam": "B02.long_2_west_side1",
+      "table_height_m": 0.0,
+      "actual_seam_height_m": [
+        0.012,
+        0.012
+      ]
+    },
+    {
+      "workpiece": "B02",
+      "seam": "B02.long_2_west_end-4.987",
+      "table_height_m": 0.0,
+      "actual_seam_height_m": [
+        0.012,
+        0.012
+      ]
+    },
+    {
+      "workpiece": "B02",
+      "seam": "B02.long_2_west_end-1.057",
+      "table_height_m": 0.0,
+      "actual_seam_height_m": [
+        0.012,
+        0.012
+      ]
+    },
+    {
+      "workpiece": "B02",
+      "seam": "B02.long_2_east_side-1",
+      "table_height_m": 0.0,
+      "actual_seam_height_m": [
+        0.012,
+        0.012
+      ]
+    },
+    {
+      "workpiece": "B02",
+      "seam": "B02.long_2_east_side1",
+      "table_height_m": 0.0,
+      "actual_seam_height_m": [
+        0.012,
+        0.012
+      ]
+    },
+    {
+      "workpiece": "B02",
+      "seam": "B02.long_2_east_end1.057",
+      "table_height_m": 0.0,
+      "actual_seam_height_m": [
+        0.012,
+        0.012
+      ]
+    },
+    {
+      "workpiece": "B02",
+      "seam": "B02.long_2_east_end4.987",
+      "table_height_m": 0.0,
+      "actual_seam_height_m": [
+        0.012,
+        0.012
+      ]
+    },
+    {
+      "workpiece": "B02",
+      "seam": "B02.long_3_west_side-1",
+      "table_height_m": 0.0,
+      "actual_seam_height_m": [
+        0.012,
+        0.012
+      ]
+    },
+    {
+      "workpiece": "B02",
+      "seam": "B02.long_3_west_side1",
+      "table_height_m": 0.0,
+      "actual_seam_height_m": [
+        0.012,
+        0.012
+      ]
+    },
+    {
+      "workpiece": "B02",
+      "seam": "B02.long_3_west_end-4.987",
+      "table_height_m": 0.0,
+      "actual_seam_height_m": [
+        0.012,
+        0.012
+      ]
+    },
+    {
+      "workpiece": "B02",
+      "seam": "B02.long_3_west_end-1.057",
+      "table_height_m": 0.0,
+      "actual_seam_height_m": [
+        0.012,
+        0.012
+      ]
+    },
+    {
+      "workpiece": "B02",
+      "seam": "B02.long_3_east_side-1",
+      "table_height_m": 0.0,
+      "actual_seam_height_m": [
+        0.012,
+        0.012
+      ]
+    },
+    {
+      "workpiece": "B02",
+      "seam": "B02.long_3_east_side1",
+      "table_height_m": 0.0,
+      "actual_seam_height_m": [
+        0.012,
+        0.012
+      ]
+    },
+    {
+      "workpiece": "B02",
+      "seam": "B02.long_3_east_end1.057",
+      "table_height_m": 0.0,
+      "actual_seam_height_m": [
+        0.012,
+        0.012
+      ]
+    },
+    {
+      "workpiece": "B02",
+      "seam": "B02.long_3_east_end4.987",
+      "table_height_m": 0.0,
+      "actual_seam_height_m": [
+        0.012,
+        0.012
+      ]
+    },
+    {
+      "workpiece": "B02",
+      "seam": "B02.long_4_west_side-1",
+      "table_height_m": 0.0,
+      "actual_seam_height_m": [
+        0.012,
+        0.012
+      ]
+    },
+    {
+      "workpiece": "B02",
+      "seam": "B02.long_4_west_side1",
+      "table_height_m": 0.0,
+      "actual_seam_height_m": [
+        0.012,
+        0.012
+      ]
+    },
+    {
+      "workpiece": "B02",
+      "seam": "B02.long_4_west_end-4.987",
+      "table_height_m": 0.0,
+      "actual_seam_height_m": [
+        0.012,
+        0.012
+      ]
+    },
+    {
+      "workpiece": "B02",
+      "seam": "B02.long_4_west_end-1.057",
+      "table_height_m": 0.0,
+      "actual_seam_height_m": [
+        0.012,
+        0.012
+      ]
+    },
+    {
+      "workpiece": "B02",
+      "seam": "B02.long_4_east_side-1",
+      "table_height_m": 0.0,
+      "actual_seam_height_m": [
+        0.012,
+        0.012
+      ]
+    },
+    {
+      "workpiece": "B02",
+      "seam": "B02.long_4_east_side1",
+      "table_height_m": 0.0,
+      "actual_seam_height_m": [
+        0.012,
+        0.012
+      ]
+    },
+    {
+      "workpiece": "B02",
+      "seam": "B02.long_4_east_end1.057",
+      "table_height_m": 0.0,
+      "actual_seam_height_m": [
+        0.012,
+        0.012
+      ]
+    },
+    {
+      "workpiece": "B02",
+      "seam": "B02.long_4_east_end4.987",
+      "table_height_m": 0.0,
+      "actual_seam_height_m": [
+        0.012,
+        0.012
+      ]
+    },
+    {
+      "workpiece": "B02",
+      "seam": "B02.long_5_west_side-1",
+      "table_height_m": 0.0,
+      "actual_seam_height_m": [
+        0.012,
+        0.012
+      ]
+    },
+    {
+      "workpiece": "B02",
+      "seam": "B02.long_5_west_side1",
+      "table_height_m": 0.0,
+      "actual_seam_height_m": [
+        0.012,
+        0.012
+      ]
+    },
+    {
+      "workpiece": "B02",
+      "seam": "B02.long_5_west_end-4.987",
+      "table_height_m": 0.0,
+      "actual_seam_height_m": [
+        0.012,
+        0.012
+      ]
+    },
+    {
+      "workpiece": "B02",
+      "seam": "B02.long_5_west_end-1.057",
+      "table_height_m": 0.0,
+      "actual_seam_height_m": [
+        0.012,
+        0.012
+      ]
+    },
+    {
+      "workpiece": "B02",
+      "seam": "B02.long_5_east_side-1",
+      "table_height_m": 0.0,
+      "actual_seam_height_m": [
+        0.012,
+        0.012
+      ]
+    },
+    {
+      "workpiece": "B02",
+      "seam": "B02.long_5_east_side1",
+      "table_height_m": 0.0,
+      "actual_seam_height_m": [
+        0.012,
+        0.012
+      ]
+    },
+    {
+      "workpiece": "B02",
+      "seam": "B02.long_5_east_end1.057",
+      "table_height_m": 0.0,
+      "actual_seam_height_m": [
+        0.012,
+        0.012
+      ]
+    },
+    {
+      "workpiece": "B02",
+      "seam": "B02.long_5_east_end4.987",
+      "table_height_m": 0.0,
+      "actual_seam_height_m": [
+        0.012,
+        0.012
+      ]
+    },
+    {
+      "workpiece": "B02",
+      "seam": "B02.trans_0_0_side-1",
+      "table_height_m": 0.0,
+      "actual_seam_height_m": [
+        0.012,
+        0.012
+      ]
+    },
+    {
+      "workpiece": "B02",
+      "seam": "B02.trans_0_0_side1",
+      "table_height_m": 0.0,
+      "actual_seam_height_m": [
+        0.012,
+        0.012
+      ]
+    },
+    {
+      "workpiece": "B02",
+      "seam": "B02.trans_0_1_side-1",
+      "table_height_m": 0.0,
+      "actual_seam_height_m": [
+        0.012,
+        0.012
+      ]
+    },
+    {
+      "workpiece": "B02",
+      "seam": "B02.trans_0_1_side1",
+      "table_height_m": 0.0,
+      "actual_seam_height_m": [
+        0.012,
+        0.012
+      ]
+    },
+    {
+      "workpiece": "B02",
+      "seam": "B02.intersection_0_1",
+      "table_height_m": 0.0,
+      "actual_seam_height_m": [
+        0.032,
+        0.21200000000000002
+      ]
+    },
+    {
+      "workpiece": "B02",
+      "seam": "B02.trans_0_2_side-1",
+      "table_height_m": 0.0,
+      "actual_seam_height_m": [
+        0.012,
+        0.012
+      ]
+    },
+    {
+      "workpiece": "B02",
+      "seam": "B02.trans_0_2_side1",
+      "table_height_m": 0.0,
+      "actual_seam_height_m": [
+        0.012,
+        0.012
+      ]
+    },
+    {
+      "workpiece": "B02",
+      "seam": "B02.trans_0_3_side-1",
+      "table_height_m": 0.0,
+      "actual_seam_height_m": [
+        0.012,
+        0.012
+      ]
+    },
+    {
+      "workpiece": "B02",
+      "seam": "B02.trans_0_3_side1",
+      "table_height_m": 0.0,
+      "actual_seam_height_m": [
+        0.012,
+        0.012
+      ]
+    },
+    {
+      "workpiece": "B02",
+      "seam": "B02.intersection_0_3",
+      "table_height_m": 0.0,
+      "actual_seam_height_m": [
+        0.032,
+        0.21200000000000002
+      ]
+    },
+    {
+      "workpiece": "B02",
+      "seam": "B02.trans_1_0_side-1",
+      "table_height_m": 0.0,
+      "actual_seam_height_m": [
+        0.012,
+        0.012
+      ]
+    },
+    {
+      "workpiece": "B02",
+      "seam": "B02.trans_1_0_side1",
+      "table_height_m": 0.0,
+      "actual_seam_height_m": [
+        0.012,
+        0.012
+      ]
+    },
+    {
+      "workpiece": "B02",
+      "seam": "B02.trans_1_1_side-1",
+      "table_height_m": 0.0,
+      "actual_seam_height_m": [
+        0.012,
+        0.012
+      ]
+    },
+    {
+      "workpiece": "B02",
+      "seam": "B02.trans_1_1_side1",
+      "table_height_m": 0.0,
+      "actual_seam_height_m": [
+        0.012,
+        0.012
+      ]
+    },
+    {
+      "workpiece": "B02",
+      "seam": "B02.intersection_1_1",
+      "table_height_m": 0.0,
+      "actual_seam_height_m": [
+        0.032,
+        0.21200000000000002
+      ]
+    },
+    {
+      "workpiece": "B02",
+      "seam": "B02.trans_1_2_side-1",
+      "table_height_m": 0.0,
+      "actual_seam_height_m": [
+        0.012,
+        0.012
+      ]
+    },
+    {
+      "workpiece": "B02",
+      "seam": "B02.trans_1_2_side1",
+      "table_height_m": 0.0,
+      "actual_seam_height_m": [
+        0.012,
+        0.012
+      ]
+    },
+    {
+      "workpiece": "B02",
+      "seam": "B02.trans_1_3_side-1",
+      "table_height_m": 0.0,
+      "actual_seam_height_m": [
+        0.012,
+        0.012
+      ]
+    },
+    {
+      "workpiece": "B02",
+      "seam": "B02.trans_1_3_side1",
+      "table_height_m": 0.0,
+      "actual_seam_height_m": [
+        0.012,
+        0.012
+      ]
+    },
+    {
+      "workpiece": "B02",
+      "seam": "B02.intersection_1_3",
+      "table_height_m": 0.0,
+      "actual_seam_height_m": [
+        0.032,
+        0.21200000000000002
+      ]
+    },
+    {
+      "workpiece": "B02",
+      "seam": "B02.trans_2_0_side-1",
+      "table_height_m": 0.0,
+      "actual_seam_height_m": [
+        0.012,
+        0.012
+      ]
+    },
+    {
+      "workpiece": "B02",
+      "seam": "B02.trans_2_0_side1",
+      "table_height_m": 0.0,
+      "actual_seam_height_m": [
+        0.012,
+        0.012
+      ]
+    },
+    {
+      "workpiece": "B02",
+      "seam": "B02.trans_2_1_side-1",
+      "table_height_m": 0.0,
+      "actual_seam_height_m": [
+        0.012,
+        0.012
+      ]
+    },
+    {
+      "workpiece": "B02",
+      "seam": "B02.trans_2_1_side1",
+      "table_height_m": 0.0,
+      "actual_seam_height_m": [
+        0.012,
+        0.012
+      ]
+    },
+    {
+      "workpiece": "B02",
+      "seam": "B02.intersection_2_1",
+      "table_height_m": 0.0,
+      "actual_seam_height_m": [
+        0.032,
+        0.21200000000000002
+      ]
+    },
+    {
+      "workpiece": "B02",
+      "seam": "B02.trans_2_2_side-1",
+      "table_height_m": 0.0,
+      "actual_seam_height_m": [
+        0.012,
+        0.012
+      ]
+    },
+    {
+      "workpiece": "B02",
+      "seam": "B02.trans_2_2_side1",
+      "table_height_m": 0.0,
+      "actual_seam_height_m": [
+        0.012,
+        0.012
+      ]
+    },
+    {
+      "workpiece": "B02",
+      "seam": "B02.trans_2_3_side-1",
+      "table_height_m": 0.0,
+      "actual_seam_height_m": [
+        0.012,
+        0.012
+      ]
+    },
+    {
+      "workpiece": "B02",
+      "seam": "B02.trans_2_3_side1",
+      "table_height_m": 0.0,
+      "actual_seam_height_m": [
+        0.012,
+        0.012
+      ]
+    },
+    {
+      "workpiece": "B02",
+      "seam": "B02.intersection_2_3",
+      "table_height_m": 0.0,
+      "actual_seam_height_m": [
+        0.032,
+        0.21200000000000002
+      ]
+    },
+    {
+      "workpiece": "B02",
+      "seam": "B02.trans_3_0_side-1",
+      "table_height_m": 0.0,
+      "actual_seam_height_m": [
+        0.012,
+        0.012
+      ]
+    },
+    {
+      "workpiece": "B02",
+      "seam": "B02.trans_3_0_side1",
+      "table_height_m": 0.0,
+      "actual_seam_height_m": [
+        0.012,
+        0.012
+      ]
+    },
+    {
+      "workpiece": "B02",
+      "seam": "B02.trans_3_1_side-1",
+      "table_height_m": 0.0,
+      "actual_seam_height_m": [
+        0.012,
+        0.012
+      ]
+    },
+    {
+      "workpiece": "B02",
+      "seam": "B02.trans_3_1_side1",
+      "table_height_m": 0.0,
+      "actual_seam_height_m": [
+        0.012,
+        0.012
+      ]
+    },
+    {
+      "workpiece": "B02",
+      "seam": "B02.intersection_3_1",
+      "table_height_m": 0.0,
+      "actual_seam_height_m": [
+        0.032,
+        0.21200000000000002
+      ]
+    },
+    {
+      "workpiece": "B02",
+      "seam": "B02.trans_3_2_side-1",
+      "table_height_m": 0.0,
+      "actual_seam_height_m": [
+        0.012,
+        0.012
+      ]
+    },
+    {
+      "workpiece": "B02",
+      "seam": "B02.trans_3_2_side1",
+      "table_height_m": 0.0,
+      "actual_seam_height_m": [
+        0.012,
+        0.012
+      ]
+    },
+    {
+      "workpiece": "B02",
+      "seam": "B02.trans_3_3_side-1",
+      "table_height_m": 0.0,
+      "actual_seam_height_m": [
+        0.012,
+        0.012
+      ]
+    },
+    {
+      "workpiece": "B02",
+      "seam": "B02.trans_3_3_side1",
+      "table_height_m": 0.0,
+      "actual_seam_height_m": [
+        0.012,
+        0.012
+      ]
+    },
+    {
+      "workpiece": "B02",
+      "seam": "B02.intersection_3_3",
+      "table_height_m": 0.0,
+      "actual_seam_height_m": [
+        0.032,
+        0.21200000000000002
+      ]
+    },
+    {
+      "workpiece": "B02",
+      "seam": "B02.trans_4_0_side-1",
+      "table_height_m": 0.0,
+      "actual_seam_height_m": [
+        0.012,
+        0.012
+      ]
+    },
+    {
+      "workpiece": "B02",
+      "seam": "B02.trans_4_0_side1",
+      "table_height_m": 0.0,
+      "actual_seam_height_m": [
+        0.012,
+        0.012
+      ]
+    },
+    {
+      "workpiece": "B02",
+      "seam": "B02.trans_4_1_side-1",
+      "table_height_m": 0.0,
+      "actual_seam_height_m": [
+        0.012,
+        0.012
+      ]
+    },
+    {
+      "workpiece": "B02",
+      "seam": "B02.trans_4_1_side1",
+      "table_height_m": 0.0,
+      "actual_seam_height_m": [
+        0.012,
+        0.012
+      ]
+    },
+    {
+      "workpiece": "B02",
+      "seam": "B02.intersection_4_1",
+      "table_height_m": 0.0,
+      "actual_seam_height_m": [
+        0.032,
+        0.21200000000000002
+      ]
+    },
+    {
+      "workpiece": "B02",
+      "seam": "B02.trans_4_2_side-1",
+      "table_height_m": 0.0,
+      "actual_seam_height_m": [
+        0.012,
+        0.012
+      ]
+    },
+    {
+      "workpiece": "B02",
+      "seam": "B02.trans_4_2_side1",
+      "table_height_m": 0.0,
+      "actual_seam_height_m": [
+        0.012,
+        0.012
+      ]
+    },
+    {
+      "workpiece": "B02",
+      "seam": "B02.trans_4_3_side-1",
+      "table_height_m": 0.0,
+      "actual_seam_height_m": [
+        0.012,
+        0.012
+      ]
+    },
+    {
+      "workpiece": "B02",
+      "seam": "B02.trans_4_3_side1",
+      "table_height_m": 0.0,
+      "actual_seam_height_m": [
+        0.012,
+        0.012
+      ]
+    },
+    {
+      "workpiece": "B02",
+      "seam": "B02.intersection_4_3",
+      "table_height_m": 0.0,
+      "actual_seam_height_m": [
+        0.032,
+        0.21200000000000002
+      ]
+    },
+    {
+      "workpiece": "B02",
+      "seam": "B02.trans_5_0_side-1",
+      "table_height_m": 0.0,
+      "actual_seam_height_m": [
+        0.012,
+        0.012
+      ]
+    },
+    {
+      "workpiece": "B02",
+      "seam": "B02.trans_5_0_side1",
+      "table_height_m": 0.0,
+      "actual_seam_height_m": [
+        0.012,
+        0.012
+      ]
+    },
+    {
+      "workpiece": "B02",
+      "seam": "B02.trans_5_1_side-1",
+      "table_height_m": 0.0,
+      "actual_seam_height_m": [
+        0.012,
+        0.012
+      ]
+    },
+    {
+      "workpiece": "B02",
+      "seam": "B02.trans_5_1_side1",
+      "table_height_m": 0.0,
+      "actual_seam_height_m": [
+        0.012,
+        0.012
+      ]
+    },
+    {
+      "workpiece": "B02",
+      "seam": "B02.intersection_5_1",
+      "table_height_m": 0.0,
+      "actual_seam_height_m": [
+        0.032,
+        0.21200000000000002
+      ]
+    },
+    {
+      "workpiece": "B02",
+      "seam": "B02.trans_5_2_side-1",
+      "table_height_m": 0.0,
+      "actual_seam_height_m": [
+        0.012,
+        0.012
+      ]
+    },
+    {
+      "workpiece": "B02",
+      "seam": "B02.trans_5_2_side1",
+      "table_height_m": 0.0,
+      "actual_seam_height_m": [
+        0.012,
+        0.012
+      ]
+    },
+    {
+      "workpiece": "B02",
+      "seam": "B02.trans_5_3_side-1",
+      "table_height_m": 0.0,
+      "actual_seam_height_m": [
+        0.012,
+        0.012
+      ]
+    },
+    {
+      "workpiece": "B02",
+      "seam": "B02.trans_5_3_side1",
+      "table_height_m": 0.0,
+      "actual_seam_height_m": [
+        0.012,
+        0.012
+      ]
+    },
+    {
+      "workpiece": "B02",
+      "seam": "B02.intersection_5_3",
+      "table_height_m": 0.0,
+      "actual_seam_height_m": [
+        0.032,
+        0.21200000000000002
+      ]
+    },
+    {
+      "workpiece": "B03",
+      "seam": "B03.long_0_west_side-1",
+      "table_height_m": 0.0,
+      "actual_seam_height_m": [
+        0.012,
+        0.012
+      ]
+    },
+    {
+      "workpiece": "B03",
+      "seam": "B03.long_0_west_side1",
+      "table_height_m": 0.0,
+      "actual_seam_height_m": [
+        0.012,
+        0.012
+      ]
+    },
+    {
+      "workpiece": "B03",
+      "seam": "B03.long_0_west_end-4.987",
+      "table_height_m": 0.0,
+      "actual_seam_height_m": [
+        0.012,
+        0.012
+      ]
+    },
+    {
+      "workpiece": "B03",
+      "seam": "B03.long_0_west_end-1.057",
+      "table_height_m": 0.0,
+      "actual_seam_height_m": [
+        0.012,
+        0.012
+      ]
+    },
+    {
+      "workpiece": "B03",
+      "seam": "B03.long_0_east_side-1",
+      "table_height_m": 0.0,
+      "actual_seam_height_m": [
+        0.012,
+        0.012
+      ]
+    },
+    {
+      "workpiece": "B03",
+      "seam": "B03.long_0_east_side1",
+      "table_height_m": 0.0,
+      "actual_seam_height_m": [
+        0.012,
+        0.012
+      ]
+    },
+    {
+      "workpiece": "B03",
+      "seam": "B03.long_0_east_end1.057",
+      "table_height_m": 0.0,
+      "actual_seam_height_m": [
+        0.012,
+        0.012
+      ]
+    },
+    {
+      "workpiece": "B03",
+      "seam": "B03.long_0_east_end4.987",
+      "table_height_m": 0.0,
+      "actual_seam_height_m": [
+        0.012,
+        0.012
+      ]
+    },
+    {
+      "workpiece": "B03",
+      "seam": "B03.long_1_west_side-1",
+      "table_height_m": 0.0,
+      "actual_seam_height_m": [
+        0.012,
+        0.012
+      ]
+    },
+    {
+      "workpiece": "B03",
+      "seam": "B03.long_1_west_side1",
+      "table_height_m": 0.0,
+      "actual_seam_height_m": [
+        0.012,
+        0.012
+      ]
+    },
+    {
+      "workpiece": "B03",
+      "seam": "B03.long_1_west_end-4.987",
+      "table_height_m": 0.0,
+      "actual_seam_height_m": [
+        0.012,
+        0.012
+      ]
+    },
+    {
+      "workpiece": "B03",
+      "seam": "B03.long_1_west_end-1.057",
+      "table_height_m": 0.0,
+      "actual_seam_height_m": [
+        0.012,
+        0.012
+      ]
+    },
+    {
+      "workpiece": "B03",
+      "seam": "B03.long_1_east_side-1",
+      "table_height_m": 0.0,
+      "actual_seam_height_m": [
+        0.012,
+        0.012
+      ]
+    },
+    {
+      "workpiece": "B03",
+      "seam": "B03.long_1_east_side1",
+      "table_height_m": 0.0,
+      "actual_seam_height_m": [
+        0.012,
+        0.012
+      ]
+    },
+    {
+      "workpiece": "B03",
+      "seam": "B03.long_1_east_end1.057",
+      "table_height_m": 0.0,
+      "actual_seam_height_m": [
+        0.012,
+        0.012
+      ]
+    },
+    {
+      "workpiece": "B03",
+      "seam": "B03.long_1_east_end4.987",
+      "table_height_m": 0.0,
+      "actual_seam_height_m": [
+        0.012,
+        0.012
+      ]
+    },
+    {
+      "workpiece": "B03",
+      "seam": "B03.long_2_west_side-1",
+      "table_height_m": 0.0,
+      "actual_seam_height_m": [
+        0.012,
+        0.012
+      ]
+    },
+    {
+      "workpiece": "B03",
+      "seam": "B03.long_2_west_side1",
+      "table_height_m": 0.0,
+      "actual_seam_height_m": [
+        0.012,
+        0.012
+      ]
+    },
+    {
+      "workpiece": "B03",
+      "seam": "B03.long_2_west_end-4.987",
+      "table_height_m": 0.0,
+      "actual_seam_height_m": [
+        0.012,
+        0.012
+      ]
+    },
+    {
+      "workpiece": "B03",
+      "seam": "B03.long_2_west_end-1.057",
+      "table_height_m": 0.0,
+      "actual_seam_height_m": [
+        0.012,
+        0.012
+      ]
+    },
+    {
+      "workpiece": "B03",
+      "seam": "B03.long_2_east_side-1",
+      "table_height_m": 0.0,
+      "actual_seam_height_m": [
+        0.012,
+        0.012
+      ]
+    },
+    {
+      "workpiece": "B03",
+      "seam": "B03.long_2_east_side1",
+      "table_height_m": 0.0,
+      "actual_seam_height_m": [
+        0.012,
+        0.012
+      ]
+    },
+    {
+      "workpiece": "B03",
+      "seam": "B03.long_2_east_end1.057",
+      "table_height_m": 0.0,
+      "actual_seam_height_m": [
+        0.012,
+        0.012
+      ]
+    },
+    {
+      "workpiece": "B03",
+      "seam": "B03.long_2_east_end4.987",
+      "table_height_m": 0.0,
+      "actual_seam_height_m": [
+        0.012,
+        0.012
+      ]
+    },
+    {
+      "workpiece": "B03",
+      "seam": "B03.long_3_west_side-1",
+      "table_height_m": 0.0,
+      "actual_seam_height_m": [
+        0.012,
+        0.012
+      ]
+    },
+    {
+      "workpiece": "B03",
+      "seam": "B03.long_3_west_side1",
+      "table_height_m": 0.0,
+      "actual_seam_height_m": [
+        0.012,
+        0.012
+      ]
+    },
+    {
+      "workpiece": "B03",
+      "seam": "B03.long_3_west_end-4.987",
+      "table_height_m": 0.0,
+      "actual_seam_height_m": [
+        0.012,
+        0.012
+      ]
+    },
+    {
+      "workpiece": "B03",
+      "seam": "B03.long_3_west_end-1.057",
+      "table_height_m": 0.0,
+      "actual_seam_height_m": [
+        0.012,
+        0.012
+      ]
+    },
+    {
+      "workpiece": "B03",
+      "seam": "B03.long_3_east_side-1",
+      "table_height_m": 0.0,
+      "actual_seam_height_m": [
+        0.012,
+        0.012
+      ]
+    },
+    {
+      "workpiece": "B03",
+      "seam": "B03.long_3_east_side1",
+      "table_height_m": 0.0,
+      "actual_seam_height_m": [
+        0.012,
+        0.012
+      ]
+    },
+    {
+      "workpiece": "B03",
+      "seam": "B03.long_3_east_end1.057",
+      "table_height_m": 0.0,
+      "actual_seam_height_m": [
+        0.012,
+        0.012
+      ]
+    },
+    {
+      "workpiece": "B03",
+      "seam": "B03.long_3_east_end4.987",
+      "table_height_m": 0.0,
+      "actual_seam_height_m": [
+        0.012,
+        0.012
+      ]
+    },
+    {
+      "workpiece": "B03",
+      "seam": "B03.long_4_west_side-1",
+      "table_height_m": 0.0,
+      "actual_seam_height_m": [
+        0.012,
+        0.012
+      ]
+    },
+    {
+      "workpiece": "B03",
+      "seam": "B03.long_4_west_side1",
+      "table_height_m": 0.0,
+      "actual_seam_height_m": [
+        0.012,
+        0.012
+      ]
+    },
+    {
+      "workpiece": "B03",
+      "seam": "B03.long_4_west_end-4.987",
+      "table_height_m": 0.0,
+      "actual_seam_height_m": [
+        0.012,
+        0.012
+      ]
+    },
+    {
+      "workpiece": "B03",
+      "seam": "B03.long_4_west_end-1.057",
+      "table_height_m": 0.0,
+      "actual_seam_height_m": [
+        0.012,
+        0.012
+      ]
+    },
+    {
+      "workpiece": "B03",
+      "seam": "B03.long_4_east_side-1",
+      "table_height_m": 0.0,
+      "actual_seam_height_m": [
+        0.012,
+        0.012
+      ]
+    },
+    {
+      "workpiece": "B03",
+      "seam": "B03.long_4_east_side1",
+      "table_height_m": 0.0,
+      "actual_seam_height_m": [
+        0.012,
+        0.012
+      ]
+    },
+    {
+      "workpiece": "B03",
+      "seam": "B03.long_4_east_end1.057",
+      "table_height_m": 0.0,
+      "actual_seam_height_m": [
+        0.012,
+        0.012
+      ]
+    },
+    {
+      "workpiece": "B03",
+      "seam": "B03.long_4_east_end4.987",
+      "table_height_m": 0.0,
+      "actual_seam_height_m": [
+        0.012,
+        0.012
+      ]
+    },
+    {
+      "workpiece": "B03",
+      "seam": "B03.long_5_west_side-1",
+      "table_height_m": 0.0,
+      "actual_seam_height_m": [
+        0.012,
+        0.012
+      ]
+    },
+    {
+      "workpiece": "B03",
+      "seam": "B03.long_5_west_side1",
+      "table_height_m": 0.0,
+      "actual_seam_height_m": [
+        0.012,
+        0.012
+      ]
+    },
+    {
+      "workpiece": "B03",
+      "seam": "B03.long_5_west_end-4.987",
+      "table_height_m": 0.0,
+      "actual_seam_height_m": [
+        0.012,
+        0.012
+      ]
+    },
+    {
+      "workpiece": "B03",
+      "seam": "B03.long_5_west_end-1.057",
+      "table_height_m": 0.0,
+      "actual_seam_height_m": [
+        0.012,
+        0.012
+      ]
+    },
+    {
+      "workpiece": "B03",
+      "seam": "B03.long_5_east_side-1",
+      "table_height_m": 0.0,
+      "actual_seam_height_m": [
+        0.012,
+        0.012
+      ]
+    },
+    {
+      "workpiece": "B03",
+      "seam": "B03.long_5_east_side1",
+      "table_height_m": 0.0,
+      "actual_seam_height_m": [
+        0.012,
+        0.012
+      ]
+    },
+    {
+      "workpiece": "B03",
+      "seam": "B03.long_5_east_end1.057",
+      "table_height_m": 0.0,
+      "actual_seam_height_m": [
+        0.012,
+        0.012
+      ]
+    },
+    {
+      "workpiece": "B03",
+      "seam": "B03.long_5_east_end4.987",
+      "table_height_m": 0.0,
+      "actual_seam_height_m": [
+        0.012,
+        0.012
+      ]
+    },
+    {
+      "workpiece": "B03",
+      "seam": "B03.trans_0_0_side-1",
+      "table_height_m": 0.0,
+      "actual_seam_height_m": [
+        0.012,
+        0.012
+      ]
+    },
+    {
+      "workpiece": "B03",
+      "seam": "B03.trans_0_0_side1",
+      "table_height_m": 0.0,
+      "actual_seam_height_m": [
+        0.012,
+        0.012
+      ]
+    },
+    {
+      "workpiece": "B03",
+      "seam": "B03.trans_0_1_side-1",
+      "table_height_m": 0.0,
+      "actual_seam_height_m": [
+        0.012,
+        0.012
+      ]
+    },
+    {
+      "workpiece": "B03",
+      "seam": "B03.trans_0_1_side1",
+      "table_height_m": 0.0,
+      "actual_seam_height_m": [
+        0.012,
+        0.012
+      ]
+    },
+    {
+      "workpiece": "B03",
+      "seam": "B03.intersection_0_1",
+      "table_height_m": 0.0,
+      "actual_seam_height_m": [
+        0.032,
+        0.21200000000000002
+      ]
+    },
+    {
+      "workpiece": "B03",
+      "seam": "B03.trans_0_2_side-1",
+      "table_height_m": 0.0,
+      "actual_seam_height_m": [
+        0.012,
+        0.012
+      ]
+    },
+    {
+      "workpiece": "B03",
+      "seam": "B03.trans_0_2_side1",
+      "table_height_m": 0.0,
+      "actual_seam_height_m": [
+        0.012,
+        0.012
+      ]
+    },
+    {
+      "workpiece": "B03",
+      "seam": "B03.trans_0_3_side-1",
+      "table_height_m": 0.0,
+      "actual_seam_height_m": [
+        0.012,
+        0.012
+      ]
+    },
+    {
+      "workpiece": "B03",
+      "seam": "B03.trans_0_3_side1",
+      "table_height_m": 0.0,
+      "actual_seam_height_m": [
+        0.012,
+        0.012
+      ]
+    },
+    {
+      "workpiece": "B03",
+      "seam": "B03.intersection_0_3",
+      "table_height_m": 0.0,
+      "actual_seam_height_m": [
+        0.032,
+        0.21200000000000002
+      ]
+    },
+    {
+      "workpiece": "B03",
+      "seam": "B03.trans_1_0_side-1",
+      "table_height_m": 0.0,
+      "actual_seam_height_m": [
+        0.012,
+        0.012
+      ]
+    },
+    {
+      "workpiece": "B03",
+      "seam": "B03.trans_1_0_side1",
+      "table_height_m": 0.0,
+      "actual_seam_height_m": [
+        0.012,
+        0.012
+      ]
+    },
+    {
+      "workpiece": "B03",
+      "seam": "B03.trans_1_1_side-1",
+      "table_height_m": 0.0,
+      "actual_seam_height_m": [
+        0.012,
+        0.012
+      ]
+    },
+    {
+      "workpiece": "B03",
+      "seam": "B03.trans_1_1_side1",
+      "table_height_m": 0.0,
+      "actual_seam_height_m": [
+        0.012,
+        0.012
+      ]
+    },
+    {
+      "workpiece": "B03",
+      "seam": "B03.intersection_1_1",
+      "table_height_m": 0.0,
+      "actual_seam_height_m": [
+        0.032,
+        0.21200000000000002
+      ]
+    },
+    {
+      "workpiece": "B03",
+      "seam": "B03.trans_1_2_side-1",
+      "table_height_m": 0.0,
+      "actual_seam_height_m": [
+        0.012,
+        0.012
+      ]
+    },
+    {
+      "workpiece": "B03",
+      "seam": "B03.trans_1_2_side1",
+      "table_height_m": 0.0,
+      "actual_seam_height_m": [
+        0.012,
+        0.012
+      ]
+    },
+    {
+      "workpiece": "B03",
+      "seam": "B03.trans_1_3_side-1",
+      "table_height_m": 0.0,
+      "actual_seam_height_m": [
+        0.012,
+        0.012
+      ]
+    },
+    {
+      "workpiece": "B03",
+      "seam": "B03.trans_1_3_side1",
+      "table_height_m": 0.0,
+      "actual_seam_height_m": [
+        0.012,
+        0.012
+      ]
+    },
+    {
+      "workpiece": "B03",
+      "seam": "B03.intersection_1_3",
+      "table_height_m": 0.0,
+      "actual_seam_height_m": [
+        0.032,
+        0.21200000000000002
+      ]
+    },
+    {
+      "workpiece": "B03",
+      "seam": "B03.trans_2_0_side-1",
+      "table_height_m": 0.0,
+      "actual_seam_height_m": [
+        0.012,
+        0.012
+      ]
+    },
+    {
+      "workpiece": "B03",
+      "seam": "B03.trans_2_0_side1",
+      "table_height_m": 0.0,
+      "actual_seam_height_m": [
+        0.012,
+        0.012
+      ]
+    },
+    {
+      "workpiece": "B03",
+      "seam": "B03.trans_2_1_side-1",
+      "table_height_m": 0.0,
+      "actual_seam_height_m": [
+        0.012,
+        0.012
+      ]
+    },
+    {
+      "workpiece": "B03",
+      "seam": "B03.trans_2_1_side1",
+      "table_height_m": 0.0,
+      "actual_seam_height_m": [
+        0.012,
+        0.012
+      ]
+    },
+    {
+      "workpiece": "B03",
+      "seam": "B03.intersection_2_1",
+      "table_height_m": 0.0,
+      "actual_seam_height_m": [
+        0.032,
+        0.21200000000000002
+      ]
+    },
+    {
+      "workpiece": "B03",
+      "seam": "B03.trans_2_2_side-1",
+      "table_height_m": 0.0,
+      "actual_seam_height_m": [
+        0.012,
+        0.012
+      ]
+    },
+    {
+      "workpiece": "B03",
+      "seam": "B03.trans_2_2_side1",
+      "table_height_m": 0.0,
+      "actual_seam_height_m": [
+        0.012,
+        0.012
+      ]
+    },
+    {
+      "workpiece": "B03",
+      "seam": "B03.trans_2_3_side-1",
+      "table_height_m": 0.0,
+      "actual_seam_height_m": [
+        0.012,
+        0.012
+      ]
+    },
+    {
+      "workpiece": "B03",
+      "seam": "B03.trans_2_3_side1",
+      "table_height_m": 0.0,
+      "actual_seam_height_m": [
+        0.012,
+        0.012
+      ]
+    },
+    {
+      "workpiece": "B03",
+      "seam": "B03.intersection_2_3",
+      "table_height_m": 0.0,
+      "actual_seam_height_m": [
+        0.032,
+        0.21200000000000002
+      ]
+    },
+    {
+      "workpiece": "B03",
+      "seam": "B03.trans_3_0_side-1",
+      "table_height_m": 0.0,
+      "actual_seam_height_m": [
+        0.012,
+        0.012
+      ]
+    },
+    {
+      "workpiece": "B03",
+      "seam": "B03.trans_3_0_side1",
+      "table_height_m": 0.0,
+      "actual_seam_height_m": [
+        0.012,
+        0.012
+      ]
+    },
+    {
+      "workpiece": "B03",
+      "seam": "B03.trans_3_1_side-1",
+      "table_height_m": 0.0,
+      "actual_seam_height_m": [
+        0.012,
+        0.012
+      ]
+    },
+    {
+      "workpiece": "B03",
+      "seam": "B03.trans_3_1_side1",
+      "table_height_m": 0.0,
+      "actual_seam_height_m": [
+        0.012,
+        0.012
+      ]
+    },
+    {
+      "workpiece": "B03",
+      "seam": "B03.intersection_3_1",
+      "table_height_m": 0.0,
+      "actual_seam_height_m": [
+        0.032,
+        0.21200000000000002
+      ]
+    },
+    {
+      "workpiece": "B03",
+      "seam": "B03.trans_3_2_side-1",
+      "table_height_m": 0.0,
+      "actual_seam_height_m": [
+        0.012,
+        0.012
+      ]
+    },
+    {
+      "workpiece": "B03",
+      "seam": "B03.trans_3_2_side1",
+      "table_height_m": 0.0,
+      "actual_seam_height_m": [
+        0.012,
+        0.012
+      ]
+    },
+    {
+      "workpiece": "B03",
+      "seam": "B03.trans_3_3_side-1",
+      "table_height_m": 0.0,
+      "actual_seam_height_m": [
+        0.012,
+        0.012
+      ]
+    },
+    {
+      "workpiece": "B03",
+      "seam": "B03.trans_3_3_side1",
+      "table_height_m": 0.0,
+      "actual_seam_height_m": [
+        0.012,
+        0.012
+      ]
+    },
+    {
+      "workpiece": "B03",
+      "seam": "B03.intersection_3_3",
+      "table_height_m": 0.0,
+      "actual_seam_height_m": [
+        0.032,
+        0.21200000000000002
+      ]
+    },
+    {
+      "workpiece": "B03",
+      "seam": "B03.trans_4_0_side-1",
+      "table_height_m": 0.0,
+      "actual_seam_height_m": [
+        0.012,
+        0.012
+      ]
+    },
+    {
+      "workpiece": "B03",
+      "seam": "B03.trans_4_0_side1",
+      "table_height_m": 0.0,
+      "actual_seam_height_m": [
+        0.012,
+        0.012
+      ]
+    },
+    {
+      "workpiece": "B03",
+      "seam": "B03.trans_4_1_side-1",
+      "table_height_m": 0.0,
+      "actual_seam_height_m": [
+        0.012,
+        0.012
+      ]
+    },
+    {
+      "workpiece": "B03",
+      "seam": "B03.trans_4_1_side1",
+      "table_height_m": 0.0,
+      "actual_seam_height_m": [
+        0.012,
+        0.012
+      ]
+    },
+    {
+      "workpiece": "B03",
+      "seam": "B03.intersection_4_1",
+      "table_height_m": 0.0,
+      "actual_seam_height_m": [
+        0.032,
+        0.21200000000000002
+      ]
+    },
+    {
+      "workpiece": "B03",
+      "seam": "B03.trans_4_2_side-1",
+      "table_height_m": 0.0,
+      "actual_seam_height_m": [
+        0.012,
+        0.012
+      ]
+    },
+    {
+      "workpiece": "B03",
+      "seam": "B03.trans_4_2_side1",
+      "table_height_m": 0.0,
+      "actual_seam_height_m": [
+        0.012,
+        0.012
+      ]
+    },
+    {
+      "workpiece": "B03",
+      "seam": "B03.trans_4_3_side-1",
+      "table_height_m": 0.0,
+      "actual_seam_height_m": [
+        0.012,
+        0.012
+      ]
+    },
+    {
+      "workpiece": "B03",
+      "seam": "B03.trans_4_3_side1",
+      "table_height_m": 0.0,
+      "actual_seam_height_m": [
+        0.012,
+        0.012
+      ]
+    },
+    {
+      "workpiece": "B03",
+      "seam": "B03.intersection_4_3",
+      "table_height_m": 0.0,
+      "actual_seam_height_m": [
+        0.032,
+        0.21200000000000002
+      ]
+    },
+    {
+      "workpiece": "B03",
+      "seam": "B03.trans_5_0_side-1",
+      "table_height_m": 0.0,
+      "actual_seam_height_m": [
+        0.012,
+        0.012
+      ]
+    },
+    {
+      "workpiece": "B03",
+      "seam": "B03.trans_5_0_side1",
+      "table_height_m": 0.0,
+      "actual_seam_height_m": [
+        0.012,
+        0.012
+      ]
+    },
+    {
+      "workpiece": "B03",
+      "seam": "B03.trans_5_1_side-1",
+      "table_height_m": 0.0,
+      "actual_seam_height_m": [
+        0.012,
+        0.012
+      ]
+    },
+    {
+      "workpiece": "B03",
+      "seam": "B03.trans_5_1_side1",
+      "table_height_m": 0.0,
+      "actual_seam_height_m": [
+        0.012,
+        0.012
+      ]
+    },
+    {
+      "workpiece": "B03",
+      "seam": "B03.intersection_5_1",
+      "table_height_m": 0.0,
+      "actual_seam_height_m": [
+        0.032,
+        0.21200000000000002
+      ]
+    },
+    {
+      "workpiece": "B03",
+      "seam": "B03.trans_5_2_side-1",
+      "table_height_m": 0.0,
+      "actual_seam_height_m": [
+        0.012,
+        0.012
+      ]
+    },
+    {
+      "workpiece": "B03",
+      "seam": "B03.trans_5_2_side1",
+      "table_height_m": 0.0,
+      "actual_seam_height_m": [
+        0.012,
+        0.012
+      ]
+    },
+    {
+      "workpiece": "B03",
+      "seam": "B03.trans_5_3_side-1",
+      "table_height_m": 0.0,
+      "actual_seam_height_m": [
+        0.012,
+        0.012
+      ]
+    },
+    {
+      "workpiece": "B03",
+      "seam": "B03.trans_5_3_side1",
+      "table_height_m": 0.0,
+      "actual_seam_height_m": [
+        0.012,
+        0.012
+      ]
+    },
+    {
+      "workpiece": "B03",
+      "seam": "B03.intersection_5_3",
+      "table_height_m": 0.0,
+      "actual_seam_height_m": [
+        0.032,
+        0.21200000000000002
+      ]
+    },
+    {
+      "workpiece": "B04",
+      "seam": "B04.parallel_0_west_side-1",
+      "table_height_m": 0.0,
+      "actual_seam_height_m": [
+        0.012,
+        0.012
+      ]
+    },
+    {
+      "workpiece": "B04",
+      "seam": "B04.parallel_0_west_side1",
+      "table_height_m": 0.0,
+      "actual_seam_height_m": [
+        0.012,
+        0.012
+      ]
+    },
+    {
+      "workpiece": "B04",
+      "seam": "B04.parallel_0_west_end-4.96",
+      "table_height_m": 0.0,
+      "actual_seam_height_m": [
+        0.012,
+        0.012
+      ]
+    },
+    {
+      "workpiece": "B04",
+      "seam": "B04.parallel_0_west_end-1.05",
+      "table_height_m": 0.0,
+      "actual_seam_height_m": [
+        0.012,
+        0.012
+      ]
+    },
+    {
+      "workpiece": "B04",
+      "seam": "B04.parallel_0_east_side-1",
+      "table_height_m": 0.0,
+      "actual_seam_height_m": [
+        0.012,
+        0.012
+      ]
+    },
+    {
+      "workpiece": "B04",
+      "seam": "B04.parallel_0_east_side1",
+      "table_height_m": 0.0,
+      "actual_seam_height_m": [
+        0.012,
+        0.012
+      ]
+    },
+    {
+      "workpiece": "B04",
+      "seam": "B04.parallel_0_east_end1.05",
+      "table_height_m": 0.0,
+      "actual_seam_height_m": [
+        0.012,
+        0.012
+      ]
+    },
+    {
+      "workpiece": "B04",
+      "seam": "B04.parallel_0_east_end4.96",
+      "table_height_m": 0.0,
+      "actual_seam_height_m": [
+        0.012,
+        0.012
+      ]
+    },
+    {
+      "workpiece": "B04",
+      "seam": "B04.parallel_1_west_side-1",
+      "table_height_m": 0.0,
+      "actual_seam_height_m": [
+        0.012,
+        0.012
+      ]
+    },
+    {
+      "workpiece": "B04",
+      "seam": "B04.parallel_1_west_side1",
+      "table_height_m": 0.0,
+      "actual_seam_height_m": [
+        0.012,
+        0.012
+      ]
+    },
+    {
+      "workpiece": "B04",
+      "seam": "B04.parallel_1_west_end-4.96",
+      "table_height_m": 0.0,
+      "actual_seam_height_m": [
+        0.012,
+        0.012
+      ]
+    },
+    {
+      "workpiece": "B04",
+      "seam": "B04.parallel_1_west_end-1.05",
+      "table_height_m": 0.0,
+      "actual_seam_height_m": [
+        0.012,
+        0.012
+      ]
+    },
+    {
+      "workpiece": "B04",
+      "seam": "B04.parallel_1_east_side-1",
+      "table_height_m": 0.0,
+      "actual_seam_height_m": [
+        0.012,
+        0.012
+      ]
+    },
+    {
+      "workpiece": "B04",
+      "seam": "B04.parallel_1_east_side1",
+      "table_height_m": 0.0,
+      "actual_seam_height_m": [
+        0.012,
+        0.012
+      ]
+    },
+    {
+      "workpiece": "B04",
+      "seam": "B04.parallel_1_east_end1.05",
+      "table_height_m": 0.0,
+      "actual_seam_height_m": [
+        0.012,
+        0.012
+      ]
+    },
+    {
+      "workpiece": "B04",
+      "seam": "B04.parallel_1_east_end4.96",
+      "table_height_m": 0.0,
+      "actual_seam_height_m": [
+        0.012,
+        0.012
+      ]
+    },
+    {
+      "workpiece": "B04",
+      "seam": "B04.parallel_2_west_side-1",
+      "table_height_m": 0.0,
+      "actual_seam_height_m": [
+        0.012,
+        0.012
+      ]
+    },
+    {
+      "workpiece": "B04",
+      "seam": "B04.parallel_2_west_side1",
+      "table_height_m": 0.0,
+      "actual_seam_height_m": [
+        0.012,
+        0.012
+      ]
+    },
+    {
+      "workpiece": "B04",
+      "seam": "B04.parallel_2_west_end-4.96",
+      "table_height_m": 0.0,
+      "actual_seam_height_m": [
+        0.012,
+        0.012
+      ]
+    },
+    {
+      "workpiece": "B04",
+      "seam": "B04.parallel_2_west_end-1.05",
+      "table_height_m": 0.0,
+      "actual_seam_height_m": [
+        0.012,
+        0.012
+      ]
+    },
+    {
+      "workpiece": "B04",
+      "seam": "B04.parallel_2_east_side-1",
+      "table_height_m": 0.0,
+      "actual_seam_height_m": [
+        0.012,
+        0.012
+      ]
+    },
+    {
+      "workpiece": "B04",
+      "seam": "B04.parallel_2_east_side1",
+      "table_height_m": 0.0,
+      "actual_seam_height_m": [
+        0.012,
+        0.012
+      ]
+    },
+    {
+      "workpiece": "B04",
+      "seam": "B04.parallel_2_east_end1.05",
+      "table_height_m": 0.0,
+      "actual_seam_height_m": [
+        0.012,
+        0.012
+      ]
+    },
+    {
+      "workpiece": "B04",
+      "seam": "B04.parallel_2_east_end4.96",
+      "table_height_m": 0.0,
+      "actual_seam_height_m": [
+        0.012,
+        0.012
+      ]
+    },
+    {
+      "workpiece": "B04",
+      "seam": "B04.parallel_3_west_side-1",
+      "table_height_m": 0.0,
+      "actual_seam_height_m": [
+        0.012,
+        0.012
+      ]
+    },
+    {
+      "workpiece": "B04",
+      "seam": "B04.parallel_3_west_side1",
+      "table_height_m": 0.0,
+      "actual_seam_height_m": [
+        0.012,
+        0.012
+      ]
+    },
+    {
+      "workpiece": "B04",
+      "seam": "B04.parallel_3_west_end-4.96",
+      "table_height_m": 0.0,
+      "actual_seam_height_m": [
+        0.012,
+        0.012
+      ]
+    },
+    {
+      "workpiece": "B04",
+      "seam": "B04.parallel_3_west_end-1.05",
+      "table_height_m": 0.0,
+      "actual_seam_height_m": [
+        0.012,
+        0.012
+      ]
+    },
+    {
+      "workpiece": "B04",
+      "seam": "B04.parallel_3_east_side-1",
+      "table_height_m": 0.0,
+      "actual_seam_height_m": [
+        0.012,
+        0.012
+      ]
+    },
+    {
+      "workpiece": "B04",
+      "seam": "B04.parallel_3_east_side1",
+      "table_height_m": 0.0,
+      "actual_seam_height_m": [
+        0.012,
+        0.012
+      ]
+    },
+    {
+      "workpiece": "B04",
+      "seam": "B04.parallel_3_east_end1.05",
+      "table_height_m": 0.0,
+      "actual_seam_height_m": [
+        0.012,
+        0.012
+      ]
+    },
+    {
+      "workpiece": "B04",
+      "seam": "B04.parallel_3_east_end4.96",
+      "table_height_m": 0.0,
+      "actual_seam_height_m": [
+        0.012,
+        0.012
+      ]
+    }
+  ],
+  "pass": true
+}
